@@ -1,0 +1,11 @@
+C:\Users\rrand\source\repos\Algorithms\11 - QuickSort\bin\Debug\netcoreapp2.2\11 - QuickSort.deps.json
+C:\Users\rrand\source\repos\Algorithms\11 - QuickSort\bin\Debug\netcoreapp2.2\11 - QuickSort.runtimeconfig.json
+C:\Users\rrand\source\repos\Algorithms\11 - QuickSort\bin\Debug\netcoreapp2.2\11 - QuickSort.runtimeconfig.dev.json
+C:\Users\rrand\source\repos\Algorithms\11 - QuickSort\bin\Debug\netcoreapp2.2\11 - QuickSort.dll
+C:\Users\rrand\source\repos\Algorithms\11 - QuickSort\bin\Debug\netcoreapp2.2\11 - QuickSort.pdb
+C:\Users\rrand\source\repos\Algorithms\11 - QuickSort\obj\Debug\netcoreapp2.2\11 - QuickSort.csprojAssemblyReference.cache
+C:\Users\rrand\source\repos\Algorithms\11 - QuickSort\obj\Debug\netcoreapp2.2\11 - QuickSort.csproj.CoreCompileInputs.cache
+C:\Users\rrand\source\repos\Algorithms\11 - QuickSort\obj\Debug\netcoreapp2.2\11 - QuickSort.AssemblyInfoInputs.cache
+C:\Users\rrand\source\repos\Algorithms\11 - QuickSort\obj\Debug\netcoreapp2.2\11 - QuickSort.AssemblyInfo.cs
+C:\Users\rrand\source\repos\Algorithms\11 - QuickSort\obj\Debug\netcoreapp2.2\11 - QuickSort.dll
+C:\Users\rrand\source\repos\Algorithms\11 - QuickSort\obj\Debug\netcoreapp2.2\11 - QuickSort.pdb

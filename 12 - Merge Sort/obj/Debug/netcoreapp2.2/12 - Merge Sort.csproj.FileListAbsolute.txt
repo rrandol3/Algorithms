@@ -1,0 +1,11 @@
+C:\Users\rrand\source\repos\Algorithms\12 - Merge Sort\bin\Debug\netcoreapp2.2\12 - Merge Sort.deps.json
+C:\Users\rrand\source\repos\Algorithms\12 - Merge Sort\bin\Debug\netcoreapp2.2\12 - Merge Sort.runtimeconfig.json
+C:\Users\rrand\source\repos\Algorithms\12 - Merge Sort\bin\Debug\netcoreapp2.2\12 - Merge Sort.runtimeconfig.dev.json
+C:\Users\rrand\source\repos\Algorithms\12 - Merge Sort\bin\Debug\netcoreapp2.2\12 - Merge Sort.dll
+C:\Users\rrand\source\repos\Algorithms\12 - Merge Sort\bin\Debug\netcoreapp2.2\12 - Merge Sort.pdb
+C:\Users\rrand\source\repos\Algorithms\12 - Merge Sort\obj\Debug\netcoreapp2.2\12 - Merge Sort.csprojAssemblyReference.cache
+C:\Users\rrand\source\repos\Algorithms\12 - Merge Sort\obj\Debug\netcoreapp2.2\12 - Merge Sort.csproj.CoreCompileInputs.cache
+C:\Users\rrand\source\repos\Algorithms\12 - Merge Sort\obj\Debug\netcoreapp2.2\12 - Merge Sort.AssemblyInfoInputs.cache
+C:\Users\rrand\source\repos\Algorithms\12 - Merge Sort\obj\Debug\netcoreapp2.2\12 - Merge Sort.AssemblyInfo.cs
+C:\Users\rrand\source\repos\Algorithms\12 - Merge Sort\obj\Debug\netcoreapp2.2\12 - Merge Sort.dll
+C:\Users\rrand\source\repos\Algorithms\12 - Merge Sort\obj\Debug\netcoreapp2.2\12 - Merge Sort.pdb

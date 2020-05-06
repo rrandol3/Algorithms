@@ -1,0 +1,11 @@
+C:\Users\rrand\source\repos\Algorithms\13 - Recursion\bin\Debug\netcoreapp2.2\13 - Recursion.deps.json
+C:\Users\rrand\source\repos\Algorithms\13 - Recursion\bin\Debug\netcoreapp2.2\13 - Recursion.runtimeconfig.json
+C:\Users\rrand\source\repos\Algorithms\13 - Recursion\bin\Debug\netcoreapp2.2\13 - Recursion.runtimeconfig.dev.json
+C:\Users\rrand\source\repos\Algorithms\13 - Recursion\bin\Debug\netcoreapp2.2\13 - Recursion.dll
+C:\Users\rrand\source\repos\Algorithms\13 - Recursion\bin\Debug\netcoreapp2.2\13 - Recursion.pdb
+C:\Users\rrand\source\repos\Algorithms\13 - Recursion\obj\Debug\netcoreapp2.2\13 - Recursion.csprojAssemblyReference.cache
+C:\Users\rrand\source\repos\Algorithms\13 - Recursion\obj\Debug\netcoreapp2.2\13 - Recursion.csproj.CoreCompileInputs.cache
+C:\Users\rrand\source\repos\Algorithms\13 - Recursion\obj\Debug\netcoreapp2.2\13 - Recursion.AssemblyInfoInputs.cache
+C:\Users\rrand\source\repos\Algorithms\13 - Recursion\obj\Debug\netcoreapp2.2\13 - Recursion.AssemblyInfo.cs
+C:\Users\rrand\source\repos\Algorithms\13 - Recursion\obj\Debug\netcoreapp2.2\13 - Recursion.dll
+C:\Users\rrand\source\repos\Algorithms\13 - Recursion\obj\Debug\netcoreapp2.2\13 - Recursion.pdb

@@ -1,0 +1,11 @@
+C:\Users\rrand\source\repos\Algorithms\16 - LeetCode Problems\bin\Debug\netcoreapp2.2\16 - LeetCode Problems.deps.json
+C:\Users\rrand\source\repos\Algorithms\16 - LeetCode Problems\bin\Debug\netcoreapp2.2\16 - LeetCode Problems.runtimeconfig.json
+C:\Users\rrand\source\repos\Algorithms\16 - LeetCode Problems\bin\Debug\netcoreapp2.2\16 - LeetCode Problems.runtimeconfig.dev.json
+C:\Users\rrand\source\repos\Algorithms\16 - LeetCode Problems\bin\Debug\netcoreapp2.2\16 - LeetCode Problems.dll
+C:\Users\rrand\source\repos\Algorithms\16 - LeetCode Problems\bin\Debug\netcoreapp2.2\16 - LeetCode Problems.pdb
+C:\Users\rrand\source\repos\Algorithms\16 - LeetCode Problems\obj\Debug\netcoreapp2.2\16 - LeetCode Problems.csproj.CoreCompileInputs.cache
+C:\Users\rrand\source\repos\Algorithms\16 - LeetCode Problems\obj\Debug\netcoreapp2.2\16 - LeetCode Problems.AssemblyInfoInputs.cache
+C:\Users\rrand\source\repos\Algorithms\16 - LeetCode Problems\obj\Debug\netcoreapp2.2\16 - LeetCode Problems.AssemblyInfo.cs
+C:\Users\rrand\source\repos\Algorithms\16 - LeetCode Problems\obj\Debug\netcoreapp2.2\16 - LeetCode Problems.dll
+C:\Users\rrand\source\repos\Algorithms\16 - LeetCode Problems\obj\Debug\netcoreapp2.2\16 - LeetCode Problems.pdb
+C:\Users\rrand\source\repos\Algorithms\16 - LeetCode Problems\obj\Debug\netcoreapp2.2\16 - LeetCode Problems.csprojAssemblyReference.cache

@@ -1,0 +1,11 @@
+C:\Users\rrand\source\repos\Algorithms\08 - Graphs\bin\Debug\netcoreapp2.2\08 - Graphs.deps.json
+C:\Users\rrand\source\repos\Algorithms\08 - Graphs\bin\Debug\netcoreapp2.2\08 - Graphs.runtimeconfig.json
+C:\Users\rrand\source\repos\Algorithms\08 - Graphs\bin\Debug\netcoreapp2.2\08 - Graphs.runtimeconfig.dev.json
+C:\Users\rrand\source\repos\Algorithms\08 - Graphs\bin\Debug\netcoreapp2.2\08 - Graphs.dll
+C:\Users\rrand\source\repos\Algorithms\08 - Graphs\bin\Debug\netcoreapp2.2\08 - Graphs.pdb
+C:\Users\rrand\source\repos\Algorithms\08 - Graphs\obj\Debug\netcoreapp2.2\08 - Graphs.csprojAssemblyReference.cache
+C:\Users\rrand\source\repos\Algorithms\08 - Graphs\obj\Debug\netcoreapp2.2\08 - Graphs.csproj.CoreCompileInputs.cache
+C:\Users\rrand\source\repos\Algorithms\08 - Graphs\obj\Debug\netcoreapp2.2\08 - Graphs.AssemblyInfoInputs.cache
+C:\Users\rrand\source\repos\Algorithms\08 - Graphs\obj\Debug\netcoreapp2.2\08 - Graphs.AssemblyInfo.cs
+C:\Users\rrand\source\repos\Algorithms\08 - Graphs\obj\Debug\netcoreapp2.2\08 - Graphs.dll
+C:\Users\rrand\source\repos\Algorithms\08 - Graphs\obj\Debug\netcoreapp2.2\08 - Graphs.pdb

@@ -1,0 +1,14 @@
+C:\Users\rrand\source\repos\Algorithms\02 - Linked Lists\bin\Debug\netcoreapp2.2\02 - Linked Lists.deps.json
+C:\Users\rrand\source\repos\Algorithms\02 - Linked Lists\bin\Debug\netcoreapp2.2\02 - Linked Lists.runtimeconfig.json
+C:\Users\rrand\source\repos\Algorithms\02 - Linked Lists\bin\Debug\netcoreapp2.2\02 - Linked Lists.runtimeconfig.dev.json
+C:\Users\rrand\source\repos\Algorithms\02 - Linked Lists\bin\Debug\netcoreapp2.2\02 - Linked Lists.dll
+C:\Users\rrand\source\repos\Algorithms\02 - Linked Lists\bin\Debug\netcoreapp2.2\02 - Linked Lists.pdb
+C:\Users\rrand\source\repos\Algorithms\02 - Linked Lists\bin\Debug\netcoreapp2.2\00 - ADTs.dll
+C:\Users\rrand\source\repos\Algorithms\02 - Linked Lists\bin\Debug\netcoreapp2.2\00 - ADTs.pdb
+C:\Users\rrand\source\repos\Algorithms\02 - Linked Lists\obj\Debug\netcoreapp2.2\02 - Linked Lists.csprojAssemblyReference.cache
+C:\Users\rrand\source\repos\Algorithms\02 - Linked Lists\obj\Debug\netcoreapp2.2\02 - Linked Lists.csproj.CoreCompileInputs.cache
+C:\Users\rrand\source\repos\Algorithms\02 - Linked Lists\obj\Debug\netcoreapp2.2\02 - Linked Lists.AssemblyInfoInputs.cache
+C:\Users\rrand\source\repos\Algorithms\02 - Linked Lists\obj\Debug\netcoreapp2.2\02 - Linked Lists.AssemblyInfo.cs
+C:\Users\rrand\source\repos\Algorithms\02 - Linked Lists\obj\Debug\netcoreapp2.2\02 - Linked Lists.csproj.CopyComplete
+C:\Users\rrand\source\repos\Algorithms\02 - Linked Lists\obj\Debug\netcoreapp2.2\02 - Linked Lists.dll
+C:\Users\rrand\source\repos\Algorithms\02 - Linked Lists\obj\Debug\netcoreapp2.2\02 - Linked Lists.pdb

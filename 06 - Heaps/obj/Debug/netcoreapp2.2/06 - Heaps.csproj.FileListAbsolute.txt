@@ -1,0 +1,14 @@
+C:\Users\rrand\source\repos\Algorithms\06 - Heaps\bin\Debug\netcoreapp2.2\06 - Heaps.deps.json
+C:\Users\rrand\source\repos\Algorithms\06 - Heaps\bin\Debug\netcoreapp2.2\06 - Heaps.runtimeconfig.json
+C:\Users\rrand\source\repos\Algorithms\06 - Heaps\bin\Debug\netcoreapp2.2\06 - Heaps.runtimeconfig.dev.json
+C:\Users\rrand\source\repos\Algorithms\06 - Heaps\bin\Debug\netcoreapp2.2\06 - Heaps.dll
+C:\Users\rrand\source\repos\Algorithms\06 - Heaps\bin\Debug\netcoreapp2.2\06 - Heaps.pdb
+C:\Users\rrand\source\repos\Algorithms\06 - Heaps\bin\Debug\netcoreapp2.2\00 - ADTs.dll
+C:\Users\rrand\source\repos\Algorithms\06 - Heaps\bin\Debug\netcoreapp2.2\00 - ADTs.pdb
+C:\Users\rrand\source\repos\Algorithms\06 - Heaps\obj\Debug\netcoreapp2.2\06 - Heaps.csprojAssemblyReference.cache
+C:\Users\rrand\source\repos\Algorithms\06 - Heaps\obj\Debug\netcoreapp2.2\06 - Heaps.csproj.CoreCompileInputs.cache
+C:\Users\rrand\source\repos\Algorithms\06 - Heaps\obj\Debug\netcoreapp2.2\06 - Heaps.AssemblyInfoInputs.cache
+C:\Users\rrand\source\repos\Algorithms\06 - Heaps\obj\Debug\netcoreapp2.2\06 - Heaps.AssemblyInfo.cs
+C:\Users\rrand\source\repos\Algorithms\06 - Heaps\obj\Debug\netcoreapp2.2\06 - Heaps.csproj.CopyComplete
+C:\Users\rrand\source\repos\Algorithms\06 - Heaps\obj\Debug\netcoreapp2.2\06 - Heaps.dll
+C:\Users\rrand\source\repos\Algorithms\06 - Heaps\obj\Debug\netcoreapp2.2\06 - Heaps.pdb

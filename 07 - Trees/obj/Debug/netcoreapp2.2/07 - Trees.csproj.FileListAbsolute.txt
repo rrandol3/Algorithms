@@ -1,0 +1,14 @@
+C:\Users\rrand\source\repos\Algorithms\07 - Trees\bin\Debug\netcoreapp2.2\07 - Trees.deps.json
+C:\Users\rrand\source\repos\Algorithms\07 - Trees\bin\Debug\netcoreapp2.2\07 - Trees.runtimeconfig.json
+C:\Users\rrand\source\repos\Algorithms\07 - Trees\bin\Debug\netcoreapp2.2\07 - Trees.runtimeconfig.dev.json
+C:\Users\rrand\source\repos\Algorithms\07 - Trees\bin\Debug\netcoreapp2.2\07 - Trees.dll
+C:\Users\rrand\source\repos\Algorithms\07 - Trees\bin\Debug\netcoreapp2.2\07 - Trees.pdb
+C:\Users\rrand\source\repos\Algorithms\07 - Trees\bin\Debug\netcoreapp2.2\00 - ADTs.dll
+C:\Users\rrand\source\repos\Algorithms\07 - Trees\bin\Debug\netcoreapp2.2\00 - ADTs.pdb
+C:\Users\rrand\source\repos\Algorithms\07 - Trees\obj\Debug\netcoreapp2.2\07 - Trees.csprojAssemblyReference.cache
+C:\Users\rrand\source\repos\Algorithms\07 - Trees\obj\Debug\netcoreapp2.2\07 - Trees.csproj.CoreCompileInputs.cache
+C:\Users\rrand\source\repos\Algorithms\07 - Trees\obj\Debug\netcoreapp2.2\07 - Trees.AssemblyInfoInputs.cache
+C:\Users\rrand\source\repos\Algorithms\07 - Trees\obj\Debug\netcoreapp2.2\07 - Trees.AssemblyInfo.cs
+C:\Users\rrand\source\repos\Algorithms\07 - Trees\obj\Debug\netcoreapp2.2\07 - Trees.csproj.CopyComplete
+C:\Users\rrand\source\repos\Algorithms\07 - Trees\obj\Debug\netcoreapp2.2\07 - Trees.dll
+C:\Users\rrand\source\repos\Algorithms\07 - Trees\obj\Debug\netcoreapp2.2\07 - Trees.pdb

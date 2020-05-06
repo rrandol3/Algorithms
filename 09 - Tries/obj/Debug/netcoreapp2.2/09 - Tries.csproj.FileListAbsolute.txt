@@ -1,0 +1,11 @@
+C:\Users\rrand\source\repos\Algorithms\09 - Tries\bin\Debug\netcoreapp2.2\09 - Tries.deps.json
+C:\Users\rrand\source\repos\Algorithms\09 - Tries\bin\Debug\netcoreapp2.2\09 - Tries.runtimeconfig.json
+C:\Users\rrand\source\repos\Algorithms\09 - Tries\bin\Debug\netcoreapp2.2\09 - Tries.runtimeconfig.dev.json
+C:\Users\rrand\source\repos\Algorithms\09 - Tries\bin\Debug\netcoreapp2.2\09 - Tries.dll
+C:\Users\rrand\source\repos\Algorithms\09 - Tries\bin\Debug\netcoreapp2.2\09 - Tries.pdb
+C:\Users\rrand\source\repos\Algorithms\09 - Tries\obj\Debug\netcoreapp2.2\09 - Tries.csprojAssemblyReference.cache
+C:\Users\rrand\source\repos\Algorithms\09 - Tries\obj\Debug\netcoreapp2.2\09 - Tries.csproj.CoreCompileInputs.cache
+C:\Users\rrand\source\repos\Algorithms\09 - Tries\obj\Debug\netcoreapp2.2\09 - Tries.AssemblyInfoInputs.cache
+C:\Users\rrand\source\repos\Algorithms\09 - Tries\obj\Debug\netcoreapp2.2\09 - Tries.AssemblyInfo.cs
+C:\Users\rrand\source\repos\Algorithms\09 - Tries\obj\Debug\netcoreapp2.2\09 - Tries.dll
+C:\Users\rrand\source\repos\Algorithms\09 - Tries\obj\Debug\netcoreapp2.2\09 - Tries.pdb

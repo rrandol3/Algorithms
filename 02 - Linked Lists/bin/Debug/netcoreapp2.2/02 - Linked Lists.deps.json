@@ -1,0 +1,33 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v2.2",
+    "signature": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v2.2": {
+      "02 - Linked Lists/1.0.0": {
+        "runtime": {
+          "02 - Linked Lists.dll": {}
+        }
+      },
+      "00 - ADTs/1.0.0": {
+        "runtime": {
+          "00 - ADTs.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "02 - Linked Lists/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "00 - ADTs/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,0 +1,11 @@
+C:\Users\rrand\source\repos\Algorithms\10 - Binary Search\bin\Debug\netcoreapp2.2\10 - Binary Search.deps.json
+C:\Users\rrand\source\repos\Algorithms\10 - Binary Search\bin\Debug\netcoreapp2.2\10 - Binary Search.runtimeconfig.json
+C:\Users\rrand\source\repos\Algorithms\10 - Binary Search\bin\Debug\netcoreapp2.2\10 - Binary Search.runtimeconfig.dev.json
+C:\Users\rrand\source\repos\Algorithms\10 - Binary Search\bin\Debug\netcoreapp2.2\10 - Binary Search.dll
+C:\Users\rrand\source\repos\Algorithms\10 - Binary Search\bin\Debug\netcoreapp2.2\10 - Binary Search.pdb
+C:\Users\rrand\source\repos\Algorithms\10 - Binary Search\obj\Debug\netcoreapp2.2\10 - Binary Search.csproj.CoreCompileInputs.cache
+C:\Users\rrand\source\repos\Algorithms\10 - Binary Search\obj\Debug\netcoreapp2.2\10 - Binary Search.AssemblyInfoInputs.cache
+C:\Users\rrand\source\repos\Algorithms\10 - Binary Search\obj\Debug\netcoreapp2.2\10 - Binary Search.AssemblyInfo.cs
+C:\Users\rrand\source\repos\Algorithms\10 - Binary Search\obj\Debug\netcoreapp2.2\10 - Binary Search.dll
+C:\Users\rrand\source\repos\Algorithms\10 - Binary Search\obj\Debug\netcoreapp2.2\10 - Binary Search.pdb
+C:\Users\rrand\source\repos\Algorithms\10 - Binary Search\obj\Debug\netcoreapp2.2\10 - Binary Search.csprojAssemblyReference.cache

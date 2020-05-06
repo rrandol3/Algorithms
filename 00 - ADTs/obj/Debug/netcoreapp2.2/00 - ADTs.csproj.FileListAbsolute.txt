@@ -1,0 +1,11 @@
+C:\Users\rrand\source\repos\Algorithms\00 - ADTs\bin\Debug\netcoreapp2.2\00 - ADTs.deps.json
+C:\Users\rrand\source\repos\Algorithms\00 - ADTs\bin\Debug\netcoreapp2.2\00 - ADTs.runtimeconfig.json
+C:\Users\rrand\source\repos\Algorithms\00 - ADTs\bin\Debug\netcoreapp2.2\00 - ADTs.runtimeconfig.dev.json
+C:\Users\rrand\source\repos\Algorithms\00 - ADTs\bin\Debug\netcoreapp2.2\00 - ADTs.dll
+C:\Users\rrand\source\repos\Algorithms\00 - ADTs\bin\Debug\netcoreapp2.2\00 - ADTs.pdb
+C:\Users\rrand\source\repos\Algorithms\00 - ADTs\obj\Debug\netcoreapp2.2\00 - ADTs.csprojAssemblyReference.cache
+C:\Users\rrand\source\repos\Algorithms\00 - ADTs\obj\Debug\netcoreapp2.2\00 - ADTs.csproj.CoreCompileInputs.cache
+C:\Users\rrand\source\repos\Algorithms\00 - ADTs\obj\Debug\netcoreapp2.2\00 - ADTs.AssemblyInfoInputs.cache
+C:\Users\rrand\source\repos\Algorithms\00 - ADTs\obj\Debug\netcoreapp2.2\00 - ADTs.AssemblyInfo.cs
+C:\Users\rrand\source\repos\Algorithms\00 - ADTs\obj\Debug\netcoreapp2.2\00 - ADTs.dll
+C:\Users\rrand\source\repos\Algorithms\00 - ADTs\obj\Debug\netcoreapp2.2\00 - ADTs.pdb

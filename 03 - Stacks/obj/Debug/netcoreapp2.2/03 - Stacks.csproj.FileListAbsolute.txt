@@ -1,0 +1,14 @@
+C:\Users\rrand\source\repos\Algorithms\03 - Stacks\bin\Debug\netcoreapp2.2\03 - Stacks.deps.json
+C:\Users\rrand\source\repos\Algorithms\03 - Stacks\bin\Debug\netcoreapp2.2\03 - Stacks.runtimeconfig.json
+C:\Users\rrand\source\repos\Algorithms\03 - Stacks\bin\Debug\netcoreapp2.2\03 - Stacks.runtimeconfig.dev.json
+C:\Users\rrand\source\repos\Algorithms\03 - Stacks\bin\Debug\netcoreapp2.2\03 - Stacks.dll
+C:\Users\rrand\source\repos\Algorithms\03 - Stacks\bin\Debug\netcoreapp2.2\03 - Stacks.pdb
+C:\Users\rrand\source\repos\Algorithms\03 - Stacks\bin\Debug\netcoreapp2.2\00 - ADTs.dll
+C:\Users\rrand\source\repos\Algorithms\03 - Stacks\bin\Debug\netcoreapp2.2\00 - ADTs.pdb
+C:\Users\rrand\source\repos\Algorithms\03 - Stacks\obj\Debug\netcoreapp2.2\03 - Stacks.csproj.CoreCompileInputs.cache
+C:\Users\rrand\source\repos\Algorithms\03 - Stacks\obj\Debug\netcoreapp2.2\03 - Stacks.AssemblyInfoInputs.cache
+C:\Users\rrand\source\repos\Algorithms\03 - Stacks\obj\Debug\netcoreapp2.2\03 - Stacks.AssemblyInfo.cs
+C:\Users\rrand\source\repos\Algorithms\03 - Stacks\obj\Debug\netcoreapp2.2\03 - Stacks.csproj.CopyComplete
+C:\Users\rrand\source\repos\Algorithms\03 - Stacks\obj\Debug\netcoreapp2.2\03 - Stacks.dll
+C:\Users\rrand\source\repos\Algorithms\03 - Stacks\obj\Debug\netcoreapp2.2\03 - Stacks.pdb
+C:\Users\rrand\source\repos\Algorithms\03 - Stacks\obj\Debug\netcoreapp2.2\03 - Stacks.csprojAssemblyReference.cache

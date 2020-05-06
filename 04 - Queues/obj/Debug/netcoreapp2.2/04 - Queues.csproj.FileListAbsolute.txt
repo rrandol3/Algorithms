@@ -1,0 +1,14 @@
+C:\Users\rrand\source\repos\Algorithms\04 - Queues\bin\Debug\netcoreapp2.2\04 - Queues.deps.json
+C:\Users\rrand\source\repos\Algorithms\04 - Queues\bin\Debug\netcoreapp2.2\04 - Queues.runtimeconfig.json
+C:\Users\rrand\source\repos\Algorithms\04 - Queues\bin\Debug\netcoreapp2.2\04 - Queues.runtimeconfig.dev.json
+C:\Users\rrand\source\repos\Algorithms\04 - Queues\bin\Debug\netcoreapp2.2\04 - Queues.dll
+C:\Users\rrand\source\repos\Algorithms\04 - Queues\bin\Debug\netcoreapp2.2\04 - Queues.pdb
+C:\Users\rrand\source\repos\Algorithms\04 - Queues\bin\Debug\netcoreapp2.2\00 - ADTs.dll
+C:\Users\rrand\source\repos\Algorithms\04 - Queues\bin\Debug\netcoreapp2.2\00 - ADTs.pdb
+C:\Users\rrand\source\repos\Algorithms\04 - Queues\obj\Debug\netcoreapp2.2\04 - Queues.csprojAssemblyReference.cache
+C:\Users\rrand\source\repos\Algorithms\04 - Queues\obj\Debug\netcoreapp2.2\04 - Queues.csproj.CoreCompileInputs.cache
+C:\Users\rrand\source\repos\Algorithms\04 - Queues\obj\Debug\netcoreapp2.2\04 - Queues.AssemblyInfoInputs.cache
+C:\Users\rrand\source\repos\Algorithms\04 - Queues\obj\Debug\netcoreapp2.2\04 - Queues.AssemblyInfo.cs
+C:\Users\rrand\source\repos\Algorithms\04 - Queues\obj\Debug\netcoreapp2.2\04 - Queues.csproj.CopyComplete
+C:\Users\rrand\source\repos\Algorithms\04 - Queues\obj\Debug\netcoreapp2.2\04 - Queues.dll
+C:\Users\rrand\source\repos\Algorithms\04 - Queues\obj\Debug\netcoreapp2.2\04 - Queues.pdb

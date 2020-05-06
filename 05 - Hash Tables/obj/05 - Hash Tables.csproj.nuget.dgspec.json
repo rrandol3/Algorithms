@@ -1,0 +1,116 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\rrand\\source\\repos\\Algorithms\\05 - Hash Tables\\05 - Hash Tables.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\rrand\\source\\repos\\Algorithms\\00 - ADTs\\00 - ADTs.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\rrand\\source\\repos\\Algorithms\\00 - ADTs\\00 - ADTs.csproj",
+        "projectName": "00 - ADTs",
+        "projectPath": "C:\\Users\\rrand\\source\\repos\\Algorithms\\00 - ADTs\\00 - ADTs.csproj",
+        "packagesPath": "C:\\Users\\rrand\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\rrand\\source\\repos\\Algorithms\\00 - ADTs\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\rrand\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "C:\\Users\\rrand\\source\\repos\\Algorithms\\05 - Hash Tables\\05 - Hash Tables.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\rrand\\source\\repos\\Algorithms\\05 - Hash Tables\\05 - Hash Tables.csproj",
+        "projectName": "05 - Hash Tables",
+        "projectPath": "C:\\Users\\rrand\\source\\repos\\Algorithms\\05 - Hash Tables\\05 - Hash Tables.csproj",
+        "packagesPath": "C:\\Users\\rrand\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\rrand\\source\\repos\\Algorithms\\05 - Hash Tables\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\rrand\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "C:\\Users\\rrand\\source\\repos\\Algorithms\\00 - ADTs\\00 - ADTs.csproj": {
+                "projectPath": "C:\\Users\\rrand\\source\\repos\\Algorithms\\00 - ADTs\\00 - ADTs.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}
