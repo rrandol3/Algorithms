@@ -9,3 +9,4 @@ C:\Users\rrand\source\repos\Algorithms\16 - LeetCode Problems\obj\Debug\netcorea
 C:\Users\rrand\source\repos\Algorithms\16 - LeetCode Problems\obj\Debug\netcoreapp2.2\16 - LeetCode Problems.dll
 C:\Users\rrand\source\repos\Algorithms\16 - LeetCode Problems\obj\Debug\netcoreapp2.2\16 - LeetCode Problems.pdb
 C:\Users\rrand\source\repos\Algorithms\16 - LeetCode Problems\obj\Debug\netcoreapp2.2\16 - LeetCode Problems.csprojAssemblyReference.cache
+C:\Users\rrand\source\repos\Algorithms\16 - LeetCode Problems\obj\Debug\netcoreapp2.2\16 - LeetCode Problems.genruntimeconfig.cache

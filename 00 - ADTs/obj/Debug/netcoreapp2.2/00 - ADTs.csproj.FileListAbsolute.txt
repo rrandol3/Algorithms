@@ -9,3 +9,4 @@ C:\Users\rrand\source\repos\Algorithms\00 - ADTs\obj\Debug\netcoreapp2.2\00 - AD
 C:\Users\rrand\source\repos\Algorithms\00 - ADTs\obj\Debug\netcoreapp2.2\00 - ADTs.AssemblyInfo.cs
 C:\Users\rrand\source\repos\Algorithms\00 - ADTs\obj\Debug\netcoreapp2.2\00 - ADTs.dll
 C:\Users\rrand\source\repos\Algorithms\00 - ADTs\obj\Debug\netcoreapp2.2\00 - ADTs.pdb
+C:\Users\rrand\source\repos\Algorithms\00 - ADTs\obj\Debug\netcoreapp2.2\00 - ADTs.genruntimeconfig.cache

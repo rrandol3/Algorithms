@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.Design;
+using System.Security.Cryptography.X509Certificates;
 
 namespace _16___LeetCode_Problems
 {
@@ -56,13 +58,50 @@ namespace _16___LeetCode_Problems
             //{
             //    Console.Write(item + " ");
             //}
-            int[] arr = { 1, 3, -1, -3, 5, 3, 6, 7 };
-            int k = 3;
-            var ans = MaxSlidingWindow(arr, k);
-            foreach (var item in ans)
-            {
-                Console.Write(item + " ");
-            }
+            //int[] arr = { 1, 3, -1, -3, 5, 3, 6, 7 };
+            //int k = 3;
+            //var ans = MaxSlidingWindow(arr, k);
+            //foreach (var item in ans)
+            //{
+            //    Console.Write(item + " ");
+            //}
+            //TreeNode tree = new TreeNode(1);
+            //tree.left = new TreeNode(2);
+            //tree.left.left = new TreeNode(4);
+            //tree.left.right = new TreeNode(5);
+            //tree.right = new TreeNode(3);
+            //tree.right.left = new TreeNode(3);
+            //tree.right.right = new TreeNode(6);
+            //Preorder(tree);
+            //Solution solution = new Solution();
+            //Console.WriteLine(DiameterTree(tree));
+            //int[,] edges = new int[5, 5];
+            //edges[0, 1] = 1;
+            //edges[1, 2] = 1;
+            //edges[2, 3] = 1;
+            //edges[3, 4] = 1;
+            //Console.WriteLine(CountComponents(5, edges));
+            //int[] arr = { 8, 1, 2, 2, 3 };
+            //var ans = SmallerNumbersThanCurrent(arr);
+            //foreach (var item in ans)
+            //{
+            //    Console.Write(item + " ");
+            //}
+            //int[] arr = { 1, 2, 2, 1, 1, 3 };
+            //Console.WriteLine(UniqueOccurrences(arr));
+            Node node1 = new Node(1);
+            Node node2 = new Node(2);
+            Node node3 = new Node(3);
+            Node node4 = new Node(4);
+            node1.neighbors.Add(node2);
+            node1.neighbors.Add(node4);
+            node2.neighbors.Add(node1);
+            node2.neighbors.Add(node3);
+            node3.neighbors.Add(node2);
+            node3.neighbors.Add(node4);
+            node4.neighbors.Add(node1);
+            node4.neighbors.Add(node3);
+            var ans = CloneGraph(node1);
         }
 
         #region April 16
@@ -1398,68 +1437,622 @@ namespace _16___LeetCode_Problems
             return paths;
         }
         #endregion
-    }
-
-    //** 108. Convert Sorted Array to Binary Search Tree
-    //Given an array where elements are sorted in ascending order, 
-    //convert it to a height balanced BST.
-    //Notes: did not get right
-    public class Solution
-    {
-        TreeNode root;
-        public TreeNode SortedArrayToBST(int[] nums)
+        #region May 8
+        // **144. Binary Tree Preorder Traversal
+        //Given a binary tree, return the preorder traversal of its nodes' values.
+        //Notes: on the right track, gave up too early
+        public static void Preorder(TreeNode node)
         {
+            if (node == null)
+            {
+                return;
+            }
+            Console.WriteLine(node.val);
+            Preorder(node.left);
+            Preorder(node.right);
+        }
+        public static IList<int> PreorderTraversal(TreeNode root)
+        {
+            if (root == null)
+            {
+                return new List<int>();
+            }
+            List<int> preorderList = new List<int>();
+            Stack<TreeNode> stack = new Stack<TreeNode>();
+            stack.Push(root);
+            while (stack.Count > 0)
+            {
+                var currNode = stack.Pop();
+                preorderList.Add(currNode.val);
+                if (currNode.right != null)
+                {
+                    stack.Push(currNode.right);
+                }
+                if (currNode.left != null)
+                {
+                    stack.Push(currNode.left);
+                }
+            }
+            return preorderList;
+        }
+
+        //515. Find Largest Value in Each Tree Row
+        //Notes: simple BFS grabbing largest at each level
+        //Time:O(n), Space:O(n)
+        public static IList<int> LargestValues(TreeNode root)
+        {
+            if (root == null)
+            {
+                return new List<int>();
+            }
+            List<int> list = new List<int>();
+            Queue<TreeNode> queue = new Queue<TreeNode>();
+            queue.Enqueue(root);
+            while (queue.Count > 0)
+            {
+                int level = queue.Count;
+                int currLevelMax = int.MinValue;
+                for (int i = 0; i < level; i++)
+                {
+                    var currNode = queue.Dequeue();
+                    currLevelMax = Math.Max(currLevelMax, currNode.val);
+                    if (currNode.left != null)
+                    {
+                        queue.Enqueue(currNode.left);
+                    }
+                    if (currNode.right != null)
+                    {
+                        queue.Enqueue(currNode.right);
+                    }
+                }
+                list.Add(currLevelMax);
+            }
+
+            return list;
+        }
+
+        //1302. Deepest Leaves Sum
+        //Given a binary tree, return the sum of values of its deepest leaves.
+        //Notes:BFS/Level order traversal to get sum at last level
+        public static int DeepestLeavesSum(TreeNode root)
+        {
+            if (root == null)
+            {
+                return -1;
+            }
+            int sum = 0;
+            Queue<TreeNode> queue = new Queue<TreeNode>();
+            queue.Enqueue(root);
+            while (queue.Count > 0)
+            {
+                var level = queue.Count;
+                int currLevelSum = 0;
+                for (int i = 0; i < level; i++)
+                {
+                    var curr = queue.Dequeue();
+                    currLevelSum += curr.val;
+                    if (curr.left != null)
+                    {
+                        queue.Enqueue(curr.left);
+                    }
+                    if (curr.right != null)
+                    {
+                        queue.Enqueue(curr.right);
+                    }
+                }
+                sum = currLevelSum;
+            }
+            return sum;
+        }
+
+        // **654. Maximum Binary Tree
+        //Notes: did not get right
+        public static TreeNode ConstuctMaxiumBinaryTreee(int[] nums)
+        {
+            int maxIndex = 0;
             for (int i = 0; i < nums.Length; i++)
             {
-                if (root == null)
+                if (nums[maxIndex] < nums[i])
                 {
-                    root = new TreeNode(nums[i]);
-                }
-                else
-                {
-                    root = Add(root, nums[i]);
+                    maxIndex = i;
                 }
             }
-            return root;
-        }
-        public TreeNode Add(TreeNode node, int value)
-        {
-            if (value < node.val)
+
+            TreeNode node = new TreeNode(nums[maxIndex]);
+            int low = 0;
+            int high = nums.Length - 1;
+            int mid = low + (high - low) / 2;
+            int leftStart = 0;
+            int leftEnd = mid - 1;
+            int rightStart = mid;
+            int rightEnd = high;
+
+            while (leftStart <= leftEnd)
             {
-                if (node.left == null)
+                if (nums[leftStart] != nums[maxIndex])
                 {
-                    node.left = new TreeNode(value);
-                }
-                else
-                {
-                    node.left = Add(node.left, value);
+                    Add(node, nums[leftStart]);
                 }
             }
-            else
+
+            while (rightStart <= rightEnd)
             {
-                if (node.right == null)
+                if (nums[rightStart] != nums[maxIndex])
                 {
-                    node.right = new TreeNode(value);
-                }
-                else
-                {
-                    node.right = Add(node.right, value);
+                    Add(node, nums[rightStart]);
                 }
             }
 
             return node;
         }
+        public static TreeNode Add(TreeNode node, int value)
+        {
+            if (node == null)
+            {
+                node = new TreeNode(value);
+            }
+            else
+            {
+                if (value < node.val)
+                {
+                    if (node.left != null)
+                    {
+                        node.left = Add(node.left, value);
+                    }
+                    else
+                    {
+                        node.left = new TreeNode(value);
+                    }
+                }
+                else
+                {
+                    if (node.right != null)
+                    {
+                        node.right = Add(node.right, value);
+                    }
+                    else
+                    {
+                        node.right = new TreeNode(value);
+                    }
+                }
+            }
+            return node;
+        }
+
+
+        //** 543. Diameter of Binary Tree
+        //Notes: did not get right
+
+        //1161. Maximum Level Sum of a Binary Tree
+        //Notes: Took two submissions, simple bfs traversal
+        //Time:O(n), Space:O(n)
+        public static int MaxLevelSum(TreeNode root)
+        {
+            if (root == null)
+            {
+                return -1;
+            }
+            int maxSumLevel = 0;
+            Queue<TreeNode> queue = new Queue<TreeNode>();
+            List<int> levelSums = new List<int>();
+            queue.Enqueue(root);
+            while (queue.Count > 0)
+            {
+                var level = queue.Count;
+                int levelSum = 0;
+                for (int i = 0; i < level; i++)
+                {
+                    var curr = queue.Dequeue();
+                    levelSum += curr.val;
+                    if (curr.left != null)
+                    {
+                        queue.Enqueue(curr.left);
+                    }
+                    if (curr.right != null)
+                    {
+                        queue.Enqueue(curr.right);
+                    }
+                }
+                levelSums.Add(levelSum);
+            }
+
+            int maxSeenSoFar = int.MinValue;
+            for (int i = 0; i < levelSums.Count; i++)
+            {
+                if (levelSums[i] > maxSeenSoFar)
+                {
+                    maxSeenSoFar = levelSums[i];
+                    maxSumLevel = i + 1;
+                }
+            }
+
+            return maxSumLevel;
+        }
+
+        // **323. Number of Connected Components in an Undirected Graph
+        //Notes: could not get to compile in leetcode
+        public static int CountComponents(int n, int[,] edges)
+        {
+            int numOfComponents = 5;
+            Queue<int> queue = new Queue<int>();
+            bool[] visited = new bool[n];
+            //foreach edge trigger bfs on destination node
+            for (int i = 0; i < n; i++)
+            {
+                for (int j = 0; j < n; j++)
+                {
+                    if (edges[i, j] == 1 && visited[j] == false)
+                    {
+                        
+                        visited[j] = true;
+                        queue.Enqueue(j);
+                        while (queue.Count > 0)
+                        {
+                            var curr = queue.Dequeue();
+                            for (int k = 0; k < n-1; k++)
+                            {
+                                if (edges[curr, k] == 1 && visited[k] == false)
+                                {
+                                    numOfComponents--;
+                                    queue.Enqueue(k);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            return numOfComponents;
+        }
+        #endregion
+        #region May 9
+        //1365. How Many Numbers Are Smaller Than the Current Number
+        //Notes: Got right answer, faster sorted array + hashtable approach
+        //Time:O(n^2), Space:O(1) Brute force
+        public static int[] SmallerNumbersThanCurrent(int[] nums)
+        {
+            int[] ansList = new int[nums.Length];
+            //brute force
+            for (int i = 0; i < nums.Length; i++)
+            {
+                for (int j = 0; j < nums.Length; j++)
+                {
+                    if (nums[i] > nums[j] && i != j)
+                    {
+                        ansList[i]++;
+                    }
+                }
+            }
+            return ansList;
+        }
+
+        //1213. Intersection of Three Sorted Arrays
+        //Notes: got right, probably a slightly faster solution available 
+        //Time:O(n), Space:O(n)
+        public static IList<int> ArraysIntersection(int[] arr1, int[] arr2, int[] arr3)
+        {
+            List<int> ansList = new List<int>();
+            Dictionary<int, int> dictionary = new Dictionary<int, int>();
+            for (int i = 0; i < arr1.Length; i++)
+            {
+                if (!dictionary.ContainsKey(arr1[i]))
+                {
+                    dictionary.Add(arr1[i], 1);
+                }
+                else
+                {
+                    dictionary[arr1[i]]++;
+                }
+            }
+            for (int i = 0; i < arr2.Length; i++)
+            {
+                if (!dictionary.ContainsKey(arr2[i]))
+                {
+                    dictionary.Add(arr2[i], 1);
+                }
+                else
+                {
+                    dictionary[arr2[i]]++;
+                }
+            }
+            for (int i = 0; i < arr3.Length; i++)
+            {
+                if (!dictionary.ContainsKey(arr3[i]))
+                {
+                    dictionary.Add(arr3[i], 1);
+                }
+                else
+                {
+                    dictionary[arr3[i]]++;
+                }
+            }
+
+            foreach (var item in dictionary)
+            {
+                if (item.Value == 3)
+                {
+                    ansList.Add(item.Key);
+                }
+            }
+
+            return ansList;
+        }
+
+        //961. N-Repeated Element in Size 2N Array
+        //Notes: got right, used dictionary and counted items, less space solution available
+        //Time:O(n), Space:O(n)
+        public static int RepeatedNTimes(int[] A)
+        {
+            Dictionary<int, int> dictionary = new Dictionary<int, int>();
+            for (int i = 0; i < A.Length; i++)
+            {
+                if (!dictionary.ContainsKey(A[i]))
+                {
+                    dictionary.Add(A[i], 1);
+                }
+                else
+                {
+                    dictionary[A[i]]++;
+                }
+            }
+            int ans = 0;
+            foreach (var item in dictionary)
+            {
+                if (item.Value > 1)
+                {
+                    ans = item.Key;
+                }
+            }
+            return ans;
+        }
+
+        //1198. Find Smallest Common Element in All Rows
+        //Notes: Got right, concept was right, need to review array or arrays vs 2d array
+        //better approach are avaible
+        //Time:O(mn), Space:O(n)
+        public static int SmallestCommonElement(int[][] mat)
+        {
+            Dictionary<int, int> dictionary = new Dictionary<int, int>();
+            for (int i = 0; i < mat.Length; i++)
+            {
+                for (int j = 0; j < mat[i].Length; j++)
+                {
+                    if (!dictionary.ContainsKey(mat[i][j]))
+                    {
+                        dictionary.Add(mat[i][j], 1);
+                    }
+                    else
+                    {
+                        dictionary[mat[i][j]]++;
+                    }
+                }
+            }
+            int n = mat.Length;
+            foreach (var item in dictionary)
+            {
+                if (item.Value == n)
+                {
+                    return item.Key;
+                }
+            }
+            return -1;
+        }
+
+        //1207. Unique Number of Occurrences
+        //Notes: got right
+        //Time:O(n), Space:O(n)
+        public static bool UniqueOccurrences(int[] arr)
+        {
+            Dictionary<int, int> dictionary = new Dictionary<int, int>();
+            for (int i = 0; i < arr.Length; i++)
+            {
+                if (!dictionary.ContainsKey(arr[i]))
+                {
+                    dictionary.Add(arr[i], 1);
+                }
+                else
+                {
+                    dictionary[arr[i]]++;
+                }
+            }
+
+            HashSet<int> hs = new HashSet<int>();
+            foreach (var item in dictionary)
+            {
+                if (hs.Contains(item.Value))
+                {
+                    return false;
+                }
+                else
+                {
+                    hs.Add(item.Value);
+                }
+            }
+            return true;
+        }
+
+        //1133. Largest Unique Number
+        //Notes: can improve the run time
+        //Time:O(n), Space:O(n)
+        public static int LargestUniqueNumber(int[] A)
+        {
+            Dictionary<int, int> dictionary = new Dictionary<int, int>();
+            for (int i = 0; i < A.Length; i++)
+            {
+                if (!dictionary.ContainsKey(A[i]))
+                {
+                    dictionary.Add(A[i], 1);
+                }
+                else
+                {
+                    dictionary[A[i]]++;
+                }
+            }
+
+            int greatestNumber = -1;
+            foreach (var item in dictionary)
+            {
+                if (item.Value <= 1)
+                {
+                    if (item.Key > greatestNumber)
+                    {
+                        greatestNumber = item.Key;
+                    }
+                }
+            }
+
+            return greatestNumber;
+        }
+
+        //136. Single Number
+        //Notes: can improve run time
+        //Time:O(n), Space:O(n)
+        public static int SingleNumber(int[] nums)
+        {
+            int ans = 0;
+            Dictionary<int, int> dictionary = new Dictionary<int, int>();
+            for (int i = 0; i < nums.Length; i++)
+            {
+                if (!dictionary.ContainsKey(nums[i]))
+                {
+                    dictionary.Add(nums[i], 1);
+                }
+                else
+                {
+                    dictionary[nums[i]]++;
+                }
+            }
+            foreach (var item in dictionary)
+            {
+                if (item.Value == 1)
+                {
+                    ans = item.Key;
+                }
+            }
+            return ans;
+        }
+
+        //**701. Insert into a Binary Search Tree
+        //did not get right on the first try 
+        //Time:O(n), Space:O(n)
+        public static TreeNode InsertIntoBST(TreeNode root, int val)
+        {
+            if (root == null)
+            {
+                root = new TreeNode(val);
+            }
+            else
+            {
+                if (val < root.val)
+                {
+                    if (root.left != null)
+                    {
+                        root.left = InsertIntoBST(root.left, val);
+                    }
+                    else
+                    {
+                        root.left = new TreeNode(val);
+                    }
+                }
+                else
+                {
+                    if (root.right != null)
+                    {
+                        root.right = InsertIntoBST(root.right, val);
+                    }
+                    else
+                    {
+                        root.right = new TreeNode(val);
+                    }
+                }
+                
+            }
+            return root;
+        }
+        #endregion
+        #region May 11
+        // **1043. Partition Array for Maximum Sum
+        //Notes:Need to working sliding window
+        public static int MaxSumAfterPartitioning(int[] A, int K)
+        {
+            int windowStart = 0;
+            for (int windowEnd = 0; windowEnd < A.Length; windowEnd++)
+            {
+                if(windowEnd == K-1)
+                {
+
+                }
+            }
+
+            int sum = 0;
+            for (int i = 0; i < A.Length; i++)
+            {
+                sum += A[i];
+            }
+
+            return sum;
+        }
+        #endregion
+        #region May 13
+
+        #endregion
+        #region May 14
+        // **15. 3Sum
+        public static IList<IList<int>> ThreeSum1(int[] nums)
+        {
+            List<IList<int>> ansList = new List<IList<int>>();
+            Dictionary<int, int> dictionary = new Dictionary<int, int>();
+            Dictionary<int, int> dictionary2 = new Dictionary<int, int>();
+            //do two sums and the optimize
+            for (int i = 0; i < nums.Length; i++)
+            {
+                var diff = -nums[i];
+                if (dictionary.ContainsKey(diff))
+                {
+                    //found pair of dictionary[diff] and nums[i]
+                    //would normally return the diff and i
+                    var diff2 = -dictionary[diff] - nums[i];
+                    for (int j = 0; j < nums.Length; j++)
+                    {
+                        if (nums[j] == diff2)
+                        {
+                            ansList.Add(new List<int> { nums[j], dictionary[diff], nums[i] });
+                            break;
+                        }
+                        
+                    }
+                }
+                else
+                {
+                    if (!dictionary.ContainsKey(nums[i]))
+                    {
+                        dictionary.Add(nums[i], i);
+                    }
+                }
+            }
+            return ansList;
+        }
+        #endregion
+        #region May 16
+        //** 133. Clone Graph
+        //Notes: did not get right, think DFS/BFS traversals
+        public static Node CloneGraph(Node node)
+        {
+            Node newNode = null;
+            return newNode;
+        }
+        #endregion
+        #region May 19
+        // **22. Generate Parentheses
+        //Notes: Thought it may have been a subset problem, didn't understand the answers
+        public static IList<string> GenerateParenthesis(int n)
+        {
+            List<string> list = new List<string>();
+
+            return list;
+        }
+        #endregion
     }
 
-    public class ListNode
-    {
-        public int val;
-        public ListNode next;
-        public ListNode(int x)
-        {
-            val = x;
-        }
-    }
     public class Node
     {
         public int val;
@@ -1483,6 +2076,127 @@ namespace _16___LeetCode_Problems
             neighbors = _neighbors;
         }
     }
+
+    //98. Validate Binary Search Tree
+    //Given a binary tree, determine if it is a valid binary search tree (BST).
+    //Notes: took 3 times to get right solution, but thought process was correct, need
+    //to review iteration bfs for trees
+    //Time:O(n), Space:O(n)
+    public class Solution
+    {
+        List<int> list = new List<int>();
+        public bool IsValidBST(TreeNode root)
+        {
+            DFS(root);
+            int i = 0;
+            int j = 1;
+            while (j < list.Count)
+            {
+                if (list[i] >= list[j])
+                {
+                    return false;
+                }
+                i++;
+                j++;
+            }
+            return true;
+        }
+
+        public void DFS(TreeNode node)
+        {
+            if (node == null)
+            {
+                return;
+            }
+            DFS(node.left);
+            list.Add(node.val);
+            DFS(node.right);
+        }
+    }
+
+    //** 108. Convert Sorted Array to Binary Search Tree
+    //Given an array where elements are sorted in ascending order, 
+    //convert it to a height balanced BST.
+    //Notes: did not get right
+    //public class Solution
+    //{
+    //    TreeNode root;
+    //    public TreeNode SortedArrayToBST(int[] nums)
+    //    {
+    //        for (int i = 0; i < nums.Length; i++)
+    //        {
+    //            if (root == null)
+    //            {
+    //                root = new TreeNode(nums[i]);
+    //            }
+    //            else
+    //            {
+    //                root = Add(root, nums[i]);
+    //            }
+    //        }
+    //        return root;
+    //    }
+    //    public TreeNode Add(TreeNode node, int value)
+    //    {
+    //        if (value < node.val)
+    //        {
+    //            if (node.left == null)
+    //            {
+    //                node.left = new TreeNode(value);
+    //            }
+    //            else
+    //            {
+    //                node.left = Add(node.left, value);
+    //            }
+    //        }
+    //        else
+    //        {
+    //            if (node.right == null)
+    //            {
+    //                node.right = new TreeNode(value);
+    //            }
+    //            else
+    //            {
+    //                node.right = Add(node.right, value);
+    //            }
+    //        }
+
+    //        return node;
+    //    }
+    //}
+
+    public class ListNode
+    {
+        public int val;
+        public ListNode next;
+        public ListNode(int x)
+        {
+            val = x;
+        }
+    }
+    //public class Node
+    //{
+    //    public int val;
+    //    public IList<Node> neighbors;
+
+    //    public Node()
+    //    {
+    //        val = 0;
+    //        neighbors = new List<Node>();
+    //    }
+
+    //    public Node(int _val)
+    //    {
+    //        val = _val;
+    //        neighbors = new List<Node>();
+    //    }
+
+    //    public Node(int _val, List<Node> _neighbors)
+    //    {
+    //        val = _val;
+    //        neighbors = _neighbors;
+    //    }
+    //}
     public class TreeNode
     {
         public int val;

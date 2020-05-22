@@ -12,3 +12,4 @@ C:\Users\rrand\source\repos\Algorithms\07 - Trees\obj\Debug\netcoreapp2.2\07 - T
 C:\Users\rrand\source\repos\Algorithms\07 - Trees\obj\Debug\netcoreapp2.2\07 - Trees.csproj.CopyComplete
 C:\Users\rrand\source\repos\Algorithms\07 - Trees\obj\Debug\netcoreapp2.2\07 - Trees.dll
 C:\Users\rrand\source\repos\Algorithms\07 - Trees\obj\Debug\netcoreapp2.2\07 - Trees.pdb
+C:\Users\rrand\source\repos\Algorithms\07 - Trees\obj\Debug\netcoreapp2.2\07 - Trees.genruntimeconfig.cache

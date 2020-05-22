@@ -9,3 +9,4 @@ C:\Users\rrand\source\repos\Algorithms\08 - Graphs\obj\Debug\netcoreapp2.2\08 - 
 C:\Users\rrand\source\repos\Algorithms\08 - Graphs\obj\Debug\netcoreapp2.2\08 - Graphs.AssemblyInfo.cs
 C:\Users\rrand\source\repos\Algorithms\08 - Graphs\obj\Debug\netcoreapp2.2\08 - Graphs.dll
 C:\Users\rrand\source\repos\Algorithms\08 - Graphs\obj\Debug\netcoreapp2.2\08 - Graphs.pdb
+C:\Users\rrand\source\repos\Algorithms\08 - Graphs\obj\Debug\netcoreapp2.2\08 - Graphs.genruntimeconfig.cache
