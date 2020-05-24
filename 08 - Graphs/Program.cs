@@ -8,7 +8,7 @@ namespace _08___Graphs
     {
         static void Main(string[] args)
         {
-            GraphEdgeList graph = new GraphEdgeList();
+            GraphMatrix graph = new GraphMatrix();
             graph.AddVertex('A');
             graph.AddVertex('B');
             graph.AddVertex('C');
@@ -18,11 +18,12 @@ namespace _08___Graphs
             graph.AddEdge(1, 2);
             graph.AddEdge(0, 3);
             graph.AddEdge(3, 4);
-            graph.DisplayEdges();
+            graph.DisplayGraph();
+            //graph.DisplayEdges();
             graph.DFS();
+            graph.DFSRec();
             graph.BFS();
+            graph.ShowAllConnectionsTo('A');
         }
-
-       
     }
 }

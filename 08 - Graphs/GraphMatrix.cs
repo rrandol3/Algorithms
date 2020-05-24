@@ -36,6 +36,7 @@ namespace _08___Graphs
 
         public void DFS()
         {
+            Console.WriteLine("DFS:");
             vertexList[0].WasVisited = true;
             DisplayVertex(0);
             stack.Push(0);
@@ -54,15 +55,32 @@ namespace _08___Graphs
                 }
             }
 
-            for (int i = 0; i < nVerts; i++)
+            ClearVertexList();
+            Console.WriteLine();
+        }
+        public void DFSRec()
+        {
+            Console.WriteLine("DFS Recursion:");
+            DFSRecHelper(0);
+            Console.WriteLine();
+            ClearVertexList();
+        }
+        private void DFSRecHelper(int vertex)
+        {
+            DisplayVertex(vertex);
+            vertexList[vertex].WasVisited = true;
+            for (int i = 0; i < vertexList.Length; i++)
             {
-                vertexList[i].WasVisited = false;
+                if (adjMatrix[vertex, i] == 1 && vertexList[i].WasVisited == false)
+                {
+                    DFSRecHelper(i);
+                }
             }
-
         }
 
         public void BFS()
         {
+            Console.WriteLine("BFS:");
             vertexList[0].WasVisited = true;
             DisplayVertex(0);
             queue.Enqueue(0);
@@ -77,11 +95,8 @@ namespace _08___Graphs
                     queue.Enqueue(v2);
                 }
             }
-
-            for (int i = 0; i < nVerts; i++)
-            {
-                vertexList[i].WasVisited = false;
-            }
+            ClearVertexList();
+            Console.WriteLine();
         }
 
         public void Mst()
@@ -122,16 +137,68 @@ namespace _08___Graphs
             return -1;
         }
 
+        void ClearVertexList()
+        {
+            Console.WriteLine();
+            for (int i = 0; i < vertexList.Length; i++)
+            {
+                vertexList[i].WasVisited = false;
+            }
+        }
+
         public void DisplayVertex(int v)
         {
-            Console.WriteLine(vertexList[v].Label);
+            Console.Write(vertexList[v].Label + " ");
+        }
+
+        public void ShowAllConnectionsTo(int vertex)
+        {
+            DisplayVertex(vertex);
+            Console.Write(":");
+            for (int i = 0; i < vertexList.Length; i++)
+            {
+                if (adjMatrix[vertex, i] == 1)
+                {
+                    DisplayVertex(i);
+                }
+            }
+        }
+        private int GetVertexLabelIndex(char label)
+        {
+            for (int i = 0; i < vertexList.Length; i++)
+            {
+                if (vertexList[i].Label == label)
+                {
+                    return i;
+                }
+            }
+            return -1;
+        }
+        public void ShowAllConnectionsTo(char label)
+        {
+            var vertexIndex = GetVertexLabelIndex(label);
+            DisplayVertex(vertexIndex);
+            Console.Write(":");
+            for (int i = 0; i < vertexList.Length; i++)
+            {
+                if (adjMatrix[vertexIndex, i] == 1)
+                {
+                    DisplayVertex(i);
+                }
+            }
         }
 
         public void DisplayGraph()
         {
+            Console.Write("  ");
+            for (int i = 0; i < vertexList.Length; i++)
+            {
+                Console.Write($"{vertexList[i].Label} ");
+            }
+            Console.WriteLine();
             for (int i = 0; i < maxVerts; i++)
             {
-                Console.Write($"{vertexList[i].Label}: ");
+                Console.Write($"{vertexList[i].Label} ");
                 for (int j = 0; j < maxVerts; j++)
                 {
                     Console.Write($"{adjMatrix[i, j]} ");

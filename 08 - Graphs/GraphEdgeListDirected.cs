@@ -4,13 +4,11 @@ using System.Text;
 
 namespace _08___Graphs
 {
-    public class GraphListDirected : GraphList
+    public class GraphEdgeListDirected : GraphEdgeList
     {
-        public GraphListDirected() : base() { }
-
         public override void AddEdge(int start, int end)
         {
-            adjList[start].AddLast(end);
+            edgeList[edgeCount++] = new int[] { start, end };
         }
     }
 }

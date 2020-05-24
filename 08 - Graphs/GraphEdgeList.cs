@@ -62,6 +62,23 @@ namespace _08___Graphs
             }
             ClearVertexList();
         }
+        public void DFSRec()
+        {
+            Console.WriteLine("DFS Recursion:");
+            DFSRecHelper(0);
+            ClearVertexList();
+        }
+        private void DFSRecHelper(int vertex)
+        {
+
+            DisplayVertex(vertex);
+            vertexList[vertex].WasVisited = true;
+            int v2;
+            while ((v2 = GetUnvisitedAjVertex(vertex)) != -1)
+            {
+                DFSRecHelper(v2);
+            }
+        }
         public void BFS()
         {
             Console.WriteLine("BFS:");
