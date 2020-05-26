@@ -193,7 +193,7 @@ namespace _07___Trees
                 case "inorder":
                     InorderTraversal(root);
                     break;
-                case "postoder":
+                case "postorder":
                     PostOrderTraveral(root);
                     break;
                 default:

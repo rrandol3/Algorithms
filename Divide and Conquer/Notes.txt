@@ -1,0 +1,28 @@
+﻿Divide and Conquer
+
+Break problems down into subproblems and solve each subproblem, then combine the subproblem solution 
+to solve the original problem. Must have a method of combining the solutions to subproblems.
+
+Recursive in nature. 
+
+Algorithm:
+DAC(P)
+{
+	if(small(P))
+	{
+		S(P);
+	}
+	else
+	{
+		divide P into P1, P2, P3 ... to Pk
+		Apply DAC(P1), DAC(P2)...
+		Combine(DAC(P1), P(2)...)
+	}
+}
+
+Common Problems: 
+Binary Seach
+Finding Min and Max
+MergeSort
+QuickSort
+Strassems Matrix Multiplication

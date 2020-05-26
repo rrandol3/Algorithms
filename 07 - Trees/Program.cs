@@ -7,21 +7,21 @@ namespace _07___Trees
     {
         static void Main(string[] args)
         {
-            List<List<int>> test = new List<List<int>>();
-            //BinaryTree tree = new BinaryTree();
-            //tree.Add(7);
-            //tree.Add(4);
-            //tree.Add(3);
-            //tree.Add(5);
-            //tree.Add(9);
-            //tree.Add(10);
-            //tree.Add(8);
+            //List<List<int>> test = new List<List<int>>();
+            BinaryTree tree = new BinaryTree();
+            tree.Add(7);
+            tree.Add(4);
+            tree.Add(3);
+            tree.Add(5);
+            tree.Add(9);
+            tree.Add(10);
+            tree.Add(8);
             //Console.WriteLine("Inorder Traveral:");
             //tree.Traverse("inorder");
             ////Console.WriteLine("Preorder Traveral:");
             ////tree.Traverse("preorder");
-            ////Console.WriteLine("Postorder Traveral:");
-            ////tree.Traverse("postorder");
+            Console.WriteLine("Postorder Traveral:");
+            tree.Traverse("postorder");
             ////Console.WriteLine("Level Order Traveral:");
             ////tree.Traverse("levelorder");
             ////tree.PreorderTraversalIterative();

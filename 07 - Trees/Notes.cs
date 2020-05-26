@@ -2,9 +2,10 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace _17___Patterns.Tree_Depth_First_Search
+namespace _07___Trees
 {
-    class Solution
+    public class Notes
     {
+        
     }
 }

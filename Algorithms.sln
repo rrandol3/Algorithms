@@ -37,7 +37,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "15 - Practice", "15 - Pract
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "16 - LeetCode Problems", "16 - LeetCode Problems\16 - LeetCode Problems.csproj", "{8C3D5E18-FA99-415B-A8B8-F728B32E6CCB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "17 - Patterns", "17 - Patterns\17 - Patterns.csproj", "{0B725CF3-3C65-4BEF-BA44-2DECC71E28D0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "17 - Patterns", "17 - Patterns\17 - Patterns.csproj", "{0B725CF3-3C65-4BEF-BA44-2DECC71E28D0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "18 - Dynamic Programming", "18 - Dynamic Programming\18 - Dynamic Programming.csproj", "{3A48587B-A5AA-4B8E-88C5-4279CE069419}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Divide and Conquer", "Divide and Conquer\Divide and Conquer.csproj", "{ABA5C581-F79B-4CD2-B6B1-D26010F7BCD7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Greedy", "Greedy\Greedy.csproj", "{6C03C27C-22B8-4E9C-B12A-A9B5DB82F5E5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "19 - Backtracking", "19 - Backtracking\19 - Backtracking.csproj", "{61700C50-28DA-40BC-936D-34AF4DE50835}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -117,6 +125,22 @@ Global
 		{0B725CF3-3C65-4BEF-BA44-2DECC71E28D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0B725CF3-3C65-4BEF-BA44-2DECC71E28D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0B725CF3-3C65-4BEF-BA44-2DECC71E28D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A48587B-A5AA-4B8E-88C5-4279CE069419}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A48587B-A5AA-4B8E-88C5-4279CE069419}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A48587B-A5AA-4B8E-88C5-4279CE069419}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A48587B-A5AA-4B8E-88C5-4279CE069419}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ABA5C581-F79B-4CD2-B6B1-D26010F7BCD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABA5C581-F79B-4CD2-B6B1-D26010F7BCD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABA5C581-F79B-4CD2-B6B1-D26010F7BCD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABA5C581-F79B-4CD2-B6B1-D26010F7BCD7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C03C27C-22B8-4E9C-B12A-A9B5DB82F5E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C03C27C-22B8-4E9C-B12A-A9B5DB82F5E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C03C27C-22B8-4E9C-B12A-A9B5DB82F5E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C03C27C-22B8-4E9C-B12A-A9B5DB82F5E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61700C50-28DA-40BC-936D-34AF4DE50835}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61700C50-28DA-40BC-936D-34AF4DE50835}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61700C50-28DA-40BC-936D-34AF4DE50835}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61700C50-28DA-40BC-936D-34AF4DE50835}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

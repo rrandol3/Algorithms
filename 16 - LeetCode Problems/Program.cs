@@ -1,6 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.Design;
+using System.Linq;
+using System.Net;
+using System.Runtime.InteropServices;
+using System.Security.Cryptography;
 using System.Security.Cryptography.X509Certificates;
 
 namespace _16___LeetCode_Problems
@@ -89,19 +93,24 @@ namespace _16___LeetCode_Problems
             //}
             //int[] arr = { 1, 2, 2, 1, 1, 3 };
             //Console.WriteLine(UniqueOccurrences(arr));
-            Node node1 = new Node(1);
-            Node node2 = new Node(2);
-            Node node3 = new Node(3);
-            Node node4 = new Node(4);
-            node1.neighbors.Add(node2);
-            node1.neighbors.Add(node4);
-            node2.neighbors.Add(node1);
-            node2.neighbors.Add(node3);
-            node3.neighbors.Add(node2);
-            node3.neighbors.Add(node4);
-            node4.neighbors.Add(node1);
-            node4.neighbors.Add(node3);
-            var ans = CloneGraph(node1);
+            //Node node1 = new Node(1);
+            //Node node2 = new Node(2);
+            //Node node3 = new Node(3);
+            //Node node4 = new Node(4);
+            //node1.neighbors.Add(node2);
+            //node1.neighbors.Add(node4);
+            //node2.neighbors.Add(node1);
+            //node2.neighbors.Add(node3);
+            //node3.neighbors.Add(node2);
+            //node3.neighbors.Add(node4);
+            //node4.neighbors.Add(node1);
+            //node4.neighbors.Add(node3);
+            //var ans = CloneGraph(node1);
+            int[][] input = new int[3][];
+            input[0] = new int[] { 2, 1, 1 };
+            input[1] = new int[] { 1, 1, 0 };
+            input[2] = new int[] { 0, 1, 1 };
+            Console.WriteLine(OrangesRotting(input));
         }
 
         #region April 16
@@ -2051,7 +2060,204 @@ namespace _16___LeetCode_Problems
             return list;
         }
         #endregion
+        #region May 24
+        //** 987. Vertical Order Traversal of a Binary Tree
+        //Notes: did not get right, think about columns, rows, and sorting
+        public static IList<IList<int>> VerticalTraversal(TreeNode root)
+        {
+            List<IList<int>> ansList = new List<IList<int>>();
+            Queue<TreeNode> queue = new Queue<TreeNode>();
+            queue.Enqueue(root);
+            while (queue.Count > 0)
+            {
+                var level = queue.Count;
+                var levelList = new List<int>();
+                for (int i = 0; i < level; i++)
+                {
+                    var curr = queue.Dequeue();
+                    levelList.Add(curr.val);
+                    if (curr.left != null)
+                    {
+                        queue.Enqueue(curr.left);
+                    }
+                    if (curr.right != null)
+                    {
+                        queue.Enqueue(curr.right);
+                    }
+                }
+                ansList.Add(levelList);
+            }
+            return ansList;
+        }
+
+        // **366. Find Leaves of Binary Tree
+        //Notes: did not get right, think DFS
+        public static IList<IList<int>> FindLeaves(TreeNode root)
+        {
+            List<IList<int>> ansList = new List<IList<int>>();
+            return ansList;
+        }
+
+        // **437. Path Sum III
+        //Notes: did not get right, was on the right path with DFS 
+        public static int PathSum(TreeNode root, int sum)
+        {
+
+            return -1;
+        }
+        #endregion
+        #region May 25
+        //215. Kth Largest Element in an Array
+        //Notes:used sorting but faster solution exists, think Heap
+        //Time: O(n logn n), Space: O(1)
+        public static int FindKthLargest(int[] nums, int k)
+        {
+            Array.Sort(nums);
+            for (int i = nums.Length; i >= 0; i--)
+            {
+                if (k == 0)
+                {
+                    return nums[i];
+                }
+                k--;
+            }
+            return -1;
+        }
+
+        //** 347. Top K Frequent Elements
+        //Notes: know how to solve with sorting, I knew I could use a Heap
+        public static int[] TopKFrequent(int[] nums, int k)
+        {
+            int[] ansList = new int[k];
+            Dictionary<int, int> dictionary = new Dictionary<int, int>();
+            for (int i = 0; i < nums.Length; i++)
+            {
+                if (!dictionary.ContainsKey(nums[i]))
+                {
+                    dictionary.Add(nums[i], 1);
+                }
+                else
+                {
+                    dictionary[nums[i]]++;
+                }
+            }
+            
+            return ansList;
+        }
+
+        //** 494. Target Sum
+        //Notes: did not get right, I knew that there was a DP approach
+        public static int FindTargetSumWays(int[] nums, int S)
+        {
+            int count = 0;
+            
+            return count;
+        }
+
+        //** 819. Most Common Word
+        //Notes: got wrong on the right path, counting word count
+        public static string MostCommonWord(string paragraph, string[] banned)
+        {
+            Dictionary<string, int> dictionary = new Dictionary<string, int>();
+            int start = 0;
+            for (int end = 0; end < paragraph.Length; end++)
+            {
+                if (!char.IsLetter(paragraph[end]))
+                {
+                    var word = CreateWord(paragraph, start, end - 1);
+                    if (!dictionary.ContainsKey(word))
+                    {
+                        dictionary.Add(word, 1);
+                    }
+                    else
+                    {
+                        dictionary[word]++;
+                    }
+                    start = end;
+                }
+            }
+            var sortedDictionary = dictionary.OrderByDescending(d => d.Value);
+            string ans = string.Empty;
+            foreach (var item in sortedDictionary)
+            {
+                ans = item.Key;
+                break;
+            }
+            return ans;
+        }
+        public static string CreateWord(string paragraph, int start, int end)
+        {
+            var size = end - start;
+            char[] charArray = new char[size];
+            for (int i = start; i <= end; i++)
+            {
+                charArray[i] = paragraph[i];
+            }
+            return new string(charArray);
+        }
+
+        //** 240. Search a 2D Matrix II
+        //Notes: Did Linear Scan and it exceeded time but I am sure it works, Better approach would have
+        //been binary search or Search Space Reduction
+        public static bool SearchMatrix(int[,] matrix, int target)
+        {
+            for (int i = 0; i < matrix.GetLength(0); i++)
+            {
+                for (int j = 0; j < matrix.GetLength(1); j++)
+                {
+                    if (matrix[i, j] > target)
+                    {
+                        break;
+                    }
+                    if (matrix[i, j] == target)
+                    {
+                        return true;
+                    }
+                }
+            }
+            return false;
+        }
+
+        //994. Rotting Oranges
+        //Notes: still don't understand the solution
+        public static int OrangesRotting(int[][] grid)
+        {
+            int minutes = -1;
+            for (int i = 0; i < grid.Length; i++)
+            {
+                for (int j = 0; j < grid[i].Length; j++)
+                {
+                    if (grid[i][j] == 2)
+                    {
+                        
+                    }
+                }
+            }
+            return minutes;
+        }
+        public void BFS(int vertex)
+        { 
+            
+        }
+
+        // ** 572. Subtree of Another Tree
+        public static bool IsSubtree(TreeNode s, TreeNode t)
+        {
+            
+            return true;
+        }
+
+        //79. Word Search
+        public static bool Exist(char[][] board, string word)
+        {
+            
+            return true;
+        }
+        
+        #endregion
     }
+
+
 
     public class Node
     {
@@ -2202,6 +2408,11 @@ namespace _16___LeetCode_Problems
         public int val;
         public TreeNode left;
         public TreeNode right;
-        public TreeNode(int x) { val = x;  }
+        public TreeNode(int val = 0, TreeNode left = null, TreeNode right = null) 
+        {
+            this.val = val;
+            this.left = left;
+            this.right = right;
+        }
     }
 }
