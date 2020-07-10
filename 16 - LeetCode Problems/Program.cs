@@ -1,11 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.Design;
+using System.Globalization;
 using System.Linq;
 using System.Net;
+using System.Reflection.Metadata;
+using System.Reflection.Metadata.Ecma335;
 using System.Runtime.InteropServices;
 using System.Security.Cryptography;
 using System.Security.Cryptography.X509Certificates;
+using System.Threading;
 
 namespace _16___LeetCode_Problems
 {
@@ -14,103 +18,12 @@ namespace _16___LeetCode_Problems
         //Curated List of Top 75 LeetCode Questions to Save Your Time
         static void Main(string[] args)
         {
-            //int[] arr = { -2, 1, -3, 4, -1, 2, 1, -5, 4 };
-            //Console.WriteLine(MaxSubArray(arr));
-            //int[] B = { 1 };
-            //var ans = SearchRange(B, 1);
-            //foreach (var item in ans)
-            //{
-            //    Console.Write(item + " ");
-            //}
-            //TreeNode node = new TreeNode(2147483647);
-            //var ansList = FindMode(node);
-            //foreach (var item in ansList)
-            //{
-            //    Console.Write(item + " ");
-            //}
-            //ListNode ll = new ListNode(1);
-            //ll.next = new ListNode(2);
-            //ll.next.next = new ListNode(3);
-            //ll.next.next.next = new ListNode(4);
-            //ll.next.next.next.next = new ListNode(5);
-            //var ans = ReverseBetween(ll, 2, 4);
-            //while (ans != null)
-            //{
-            //    Console.Write(ans.val + " ");
-            //    ans = ans.next;
-            //}
-            //TreeNode root = new TreeNode(3);
-            //root.left = new TreeNode(9);
-            //root.right = new TreeNode(20);
-            //root.right.left = new TreeNode(15);
-            //root.right.right = new TreeNode(7);
-            //var ans = AverageOfLevels(root);
-            //foreach (var item in ans)
-            //{
-            //    Console.Write(item + " ");
-            //}
-            //var ans = ClosestKValues(root, 3.714286, 2);
-            //foreach (var item in ans)
-            //{
-            //    Console.Write(item + " ");
-            //}
-            //var str = "loveleetcode";
-            //Console.WriteLine(FirstUniqChar(str));
-            //var str = "babab";
-            //var ans = LongestPalindrome(str);
-            //foreach (var item in ans)
-            //{
-            //    Console.Write(item + " ");
-            //}
-            //int[] arr = { 1, 3, -1, -3, 5, 3, 6, 7 };
-            //int k = 3;
-            //var ans = MaxSlidingWindow(arr, k);
-            //foreach (var item in ans)
-            //{
-            //    Console.Write(item + " ");
-            //}
-            //TreeNode tree = new TreeNode(1);
-            //tree.left = new TreeNode(2);
-            //tree.left.left = new TreeNode(4);
-            //tree.left.right = new TreeNode(5);
-            //tree.right = new TreeNode(3);
-            //tree.right.left = new TreeNode(3);
-            //tree.right.right = new TreeNode(6);
-            //Preorder(tree);
-            //Solution solution = new Solution();
-            //Console.WriteLine(DiameterTree(tree));
-            //int[,] edges = new int[5, 5];
-            //edges[0, 1] = 1;
-            //edges[1, 2] = 1;
-            //edges[2, 3] = 1;
-            //edges[3, 4] = 1;
-            //Console.WriteLine(CountComponents(5, edges));
-            //int[] arr = { 8, 1, 2, 2, 3 };
-            //var ans = SmallerNumbersThanCurrent(arr);
-            //foreach (var item in ans)
-            //{
-            //    Console.Write(item + " ");
-            //}
-            //int[] arr = { 1, 2, 2, 1, 1, 3 };
-            //Console.WriteLine(UniqueOccurrences(arr));
-            //Node node1 = new Node(1);
-            //Node node2 = new Node(2);
-            //Node node3 = new Node(3);
-            //Node node4 = new Node(4);
-            //node1.neighbors.Add(node2);
-            //node1.neighbors.Add(node4);
-            //node2.neighbors.Add(node1);
-            //node2.neighbors.Add(node3);
-            //node3.neighbors.Add(node2);
-            //node3.neighbors.Add(node4);
-            //node4.neighbors.Add(node1);
-            //node4.neighbors.Add(node3);
-            //var ans = CloneGraph(node1);
-            int[][] input = new int[3][];
-            input[0] = new int[] { 2, 1, 1 };
-            input[1] = new int[] { 1, 1, 0 };
-            input[2] = new int[] { 0, 1, 1 };
-            Console.WriteLine(OrangesRotting(input));
+            int[] nums = new int[] { 4, 3, 2, 7, 8, 2, 3, 1 };
+            var ans = FindDisappearedNumbers(nums);
+            foreach (var item in ans)
+            {
+                Console.Write(item);
+            }
         }
 
         #region April 16
@@ -2253,11 +2166,904 @@ namespace _16___LeetCode_Problems
             
             return true;
         }
-        
+
+        #endregion
+        #region May 26
+        //**957. Prison Cells After N Days
+        public static int[] PrisonAfterNDays(int[] cells, int N)
+        {
+            for (int i = 0; i < 1; i++)
+            {
+                for (int j = 0; j < cells.Length; j++)
+                {
+                    cells[j] = GetPrisonCellState(cells, j);
+                }
+            }
+            return cells;
+        }
+        public static int GetPrisonCellState(int[] cells, int currIndex)
+        {
+            if (currIndex == 0)
+            {
+                //first cell
+                return 0;
+            }
+            if (currIndex == cells.Length -1)
+            {
+                //last cell
+                return 0;
+            }
+            if (cells[currIndex - 1] == 0 && cells[currIndex + 1] == 0 || cells[currIndex - 1] == 1 && cells[currIndex + 1] == 1)
+            {
+                return 1;
+            }
+            return 0;
+        }
+        #endregion
+        #region May 27
+        //** 203. Remove Linked List Elements
+        //Notes: right idea, didn't know about the sentinel head thing
+        public static ListNode RemoveElements(ListNode head, int val)
+        {
+            ListNode sentinel = new ListNode(0);
+            sentinel.next = head;
+            ListNode curr = head;
+            ListNode prev = sentinel;
+            while (curr != null)
+            {
+                if (curr.val == val)
+                {
+                    prev.next = curr.next;
+                }
+                else
+                {
+                    prev = curr;
+                }
+                curr = curr.next;
+            }
+            return sentinel.next;
+        }
+
+        //160. Intersection of Two Linked Lists
+        public static ListNode GetIntersectionNode(ListNode headA, ListNode headB)
+        {
+            int countA = 0;
+            var currA = headA;
+            while (currA != null)
+            {
+                countA++;
+                currA = currA.next;
+            }
+            int countB = 0;
+            var currB = headB;
+            while (currB != null)
+            {
+                countB++;
+                currB = currB.next;
+            }
+            if (countA > countB)
+            {
+                var diff = countA - countB;
+                while (diff > 0)
+                {
+                    headA = headA.next;
+                    diff--;
+                }
+                while (headA != null && headB != null)
+                {
+                    if (headA == headB)
+                    {
+                        return headA;
+                    }
+                    headA = headA.next;
+                    headB = headB.next;
+                }
+            }
+            else
+            {
+                var diff = countB - countA;
+                while (diff > 0)
+                {
+                    headB = headB.next;
+                    diff--;
+                }
+                while (headA != null && headB != null)
+                {
+                    if (headA == headB)
+                    {
+                        return headA;
+                    }
+                    headA = headA.next;
+                    headB = headB.next;
+                }
+            }
+            return null;
+        }
+
+        //**21. Merge Two Sorted Lists
+        //
+        public static ListNode MergeTwoLists1(ListNode l1, ListNode l2)
+        {
+            while (l1 != null && l2 !=null)
+            {
+                if (l1.val < l2.val)
+                {
+                    var temp2 = l2.next;
+                    l2.next = l1;
+                    l1 = temp2;
+                }
+                else
+                {
+                    var temp1 = l1.next;
+                    l1.next = l2;
+                    l2 = temp1;
+                }
+            }
+            return l1;
+        }
+        #endregion
+        #region May 28
+        // **155. Min Stack
+        //Notes: did not get right, had the right approach(2 stacks) wrong implementation
+        //Down below
+        #endregion
+        #region May 29
+        //**232. Implement Queue using Stacks
+        //Notes: did not get right, need to work on problem solving
+
+        //**844. Backspace String Compare
+        //Notes: did not get right
+        public static bool BackspaceCompare(string S, string T)
+        {
+            Stack<char> stackS = new Stack<char>();
+            for (int i = 0; i < S.Length; i++)
+            {
+                stackS.Push(S[i]);
+            }
+            var listS = new List<char>();
+            for (int i = 0; i < S.Length; i++)
+            {
+                if (S[i] == '#')
+                {
+                    listS.Add(stackS.Peek());
+                    stackS.Pop();
+                }
+                else
+                {
+                    stackS.Pop();
+                }
+            }
+
+            return true;
+        }
+
+        //1047. Remove All Adjacent Duplicates In String
+        //Notes: got answer right but not optimal solution, could use a stack for this?
+        public static string RemoveDuplicates(string S)
+        {
+            int i = 0;
+            int j = 1;
+            while (i < S.Length && j < S.Length)
+            {
+                if (S[i] == S[j])
+                {
+                    S = S.Remove(i, 2);
+                    i = 0;
+                    j = 1;
+                }
+                else
+                {
+                    i++;
+                    j++;
+                }
+            }
+            return S;
+        }
+
+        //496. Next Greater Element I
+        //Notes: got right not optimal solution, stack and dictionary approach is faster
+        public static int[] NextGreaterElement(int[] nums1, int[] nums2)
+        {
+            for (int i = 0; i < nums1.Length; i++)
+            {
+                nums1[i] = FindGreater(nums1[i], nums2);
+            }
+            return nums1;
+        }
+        public static int FindGreater(int target, int[] nums2)
+        {
+            for (int i = 0; i < nums2.Length; i++)
+            {
+                if (target == nums2[i])
+                {
+                    int start = i;
+                    int end = nums2.Length - 1;
+                    while (start <= end)
+                    {
+                        if (nums2[start] > target)
+                        {
+                            return nums2[start];
+                        }
+                        start++;
+                    }
+                }
+                //if (nums2[i] > target)
+                //{
+                //    return nums2[i];
+                //}
+            }
+            return -1;
+        }
+
+        //225. Implement Stack using Queues
+        //Notes: got answer right
+
+        //**1441. Build an Array With Stack Operations
+        //Notes: did not get right
+        public static IList<string> BuildArray(int[] target, int n)
+        {
+            List<string> ansList = new List<string>();
+            int j = 1;
+            for (int i = 0; i < target.Length; i++)
+            {
+                ansList.Add("Push");
+                if (target[i] != j)
+                {
+                    ansList.Add("Pop");
+                    i++;
+                }
+                j++;
+            }
+            while (j <= n)
+            {
+                ansList.Add("Push");
+                j++;
+            }
+            return ansList;
+        }
+
+        //346. Moving Average from Data Stream
+        //Notes: did not get right, see below
+        #endregion
+        #region May 30
+        //**933. Number of Recent Calls
+        //Notes: did not understand the question, correct answer below using queue RecentCounter class
+
+        //**953. Verifying an Alien Dictionary
+        //Notes: did not get right
+        public static bool IsAlienSorted(string[] words, string order)
+        {
+            Dictionary<char, int> dictionary = new Dictionary<char, int>();
+            for (int i = 0; i < order.Length; i++)
+            {
+                dictionary.Add(order[i], i);
+            }
+            foreach (var word in words)
+            {
+                char previousLetter = word[0];
+                foreach (var letter in word)
+                {
+                    if (dictionary[previousLetter] > dictionary[letter])
+                    {
+                        return false;
+                    }
+                    else
+                    {
+                        previousLetter = letter;
+                    }
+                }
+            }
+            return true;
+        }
+
+        //**1002. Find Common Characters
+        //Notes: did not get right
+        public static IList<string> CommonChars(string[] A)
+        {
+            List<string> list = new List<string>();
+            Dictionary<char, int> dictionary = new Dictionary<char, int>();
+            foreach (var word in A)
+            {
+                foreach (var letter in word)
+                {
+                    if (!dictionary.ContainsKey(letter))
+                    {
+                        dictionary.Add(letter, 1);
+                    }
+                    else
+                    {
+                        dictionary[letter]++;
+                    }
+                }
+            }
+            int n = A.Length;
+            foreach (var item in dictionary)
+            {
+                int value = item.Value;
+                if (value == n || value > n)
+                {
+                    list.Add(item.Key.ToString());
+                    var div = value / n;
+                    if (div > 1)
+                    {
+                        list.Add(item.Key.ToString());
+                    }
+                }
+            }
+            return list;
+        }
+        #endregion
+        #region May 31
+        //167. Two Sum II - Input array is sorted
+        //Notes: eventually got right, need to watch for edge cases and read the question carefully
+        public static int[] TwoSum1(int[] numbers, int target)
+        {
+            int[] ans = new int[2];
+            for (int i = 0; i < numbers.Length; i++)
+            {
+                var diff = target - numbers[i];
+                var match = BinarySearch(numbers, diff, i);
+                if (match != -1)
+                {
+                    if (i < match)
+                    {
+                        ans[0] = i + 1;
+                        ans[1] = match + 1;
+                        break;
+                    }
+                }
+            }
+            return ans;
+        }
+        public static int BinarySearch(int[] nums, int target, int currIndex)
+        {
+            int low = 0;
+            int high = nums.Length - 1;
+            while (low <= high)
+            {
+                int mid = low + (high - low) / 2;
+                if (nums[mid] == target && mid != currIndex)
+                {
+                    return mid;
+                }
+                if (target < nums[mid])
+                {
+                    high = mid - 1;
+                }
+                else
+                {
+                    low = mid + 1;
+                }
+            }
+            return -1;
+        }
+
+        //704. Binary Search
+        //Notes: got right, simple binary search
+        public static int Search1(int[] nums, int target)
+        {
+            int low = 0;
+            int high = nums.Length - 1;
+            while (low <= high)
+            {
+                int mid = low + (high - low) / 2;
+                if (nums[mid] == target)
+                {
+                    return mid;
+                }
+                if (target < nums[mid])
+                {
+                    high = mid - 1;
+                }
+                else
+                {
+                    low = mid + 1;
+                }
+            }
+            return -1;
+        }
+        //** 852. Peak Index in a Mountain Array
+        //Notes: did not get right, need to work on problem solving
+        public static int PeakIndexInMountainArray(int[] A)
+        {
+            int low = 0;
+            int high = A.Length - 1;
+            while (low <= high)
+            {
+                int mid = low + (high - low) / 2;
+                if (A[mid] > A[low] && A[mid] > A[high])
+                {
+                    return mid;
+                }
+                if (A[mid] < A[high] && A[mid] > A[low])
+                {
+                    low = mid + 1;
+                }
+                else
+                {
+                    high = mid - 1;
+                }
+            }
+            return -1;
+        }
+
+        //**350. Intersection of Two Arrays II
+        //Notes: did not get right, think dictionary/hashtable
+        public static int[] Intersect(int[] nums1, int[] nums2)
+        {
+            if (nums1.Length == 0 || nums2.Length == 0)
+            {
+                return new int[] { };
+            }
+            int[] ansArray;
+            if (nums1.Length == 1 || nums2.Length == 1)
+            {
+                ansArray = new int[1];
+            }
+            else
+            {
+                ansArray = new int[2];
+            }
+            int i = 0;
+            int j = 0;
+            int k = 0;
+            while (i < nums1.Length && j < nums2.Length)
+            {
+                if (nums1[i] == nums2[j])
+                {
+                    ansArray[k++] = nums1[i];
+                    i++;
+                    j++;
+                }
+                else if (nums1[i] != nums2[j] && nums1.Length > nums2.Length)
+                {
+                    i++;
+                }
+                else if (nums1[i] != nums2[j] && nums1.Length < nums2.Length)
+                {
+                    j++;
+                }
+            }
+            return ansArray;
+        }
+        #endregion
+        #region June 1
+        //Going to take a break from leetcode
+        #endregion
+        #region June 27
+        //242. Valid Anagram
+        //Given two strings s and t , write a function to determine if t is an anagram of s.
+        //Input: s = "anagram", t = "nagaram"
+        //Output: true
+        //Notes: Got answer right, did forget edge case
+        //Time:O(n), Space:O(n)
+        public static bool IsAnagram(string s, string t)
+        {
+            if (s.Length != t.Length)
+            {
+                return false;
+            }
+            Dictionary<char, int> dictionary = new Dictionary<char, int>();
+            for (int i = 0; i < s.Length; i++)
+            {
+                if (!dictionary.ContainsKey(s[i]))
+                {
+                    dictionary.Add(s[i], 1);
+                }
+                else
+                {
+                    dictionary[s[i]]++;
+                }
+            }
+
+            for (int i = 0; i < t.Length; i++)
+            {
+                if (dictionary.ContainsKey(t[i]))
+                {
+                    dictionary[t[i]]--;
+                    if (dictionary[t[i]] == 0)
+                    {
+                        dictionary.Remove(t[i]);
+                    }
+                }
+            }
+
+            return dictionary.Count() == 0 ? true : false;
+        }
+
+        //53. Maximum Subarray
+        //Given an integer array nums, find the contiguous subarray (containing at least one number) which has the largest sum and return its sum.
+        //Input: [-2,1,-3,4,-1,2,1,-5,4],
+        //Output: 6
+        //Explanation: [4,-1,2,1] has the largest sum = 6.
+        //Notes:Did not get right, think Greedy Solution
+        public static int MaxSumArray(int[] nums) {
+            int currSum = nums[0];
+            int maxSum = nums[0];
+           
+            return maxSum;
+        }
+        //152. Maximum Product Subarray
+        //Notes: did not get right
+        public static int MaxProduct(int[] nums)
+        {
+            int currProduct = 0;
+            int maxProduct = 0;
+            
+            return maxProduct;
+        }
+
+        //76. Minimum Window Substring
+        //Notes: did not get right
+        public static string MinWindow(string s, string t)
+        {
+            Dictionary<char, int> dictionaryT = new Dictionary<char, int>();
+            for (int i = 0; i < t.Length; i++)
+            {
+                if (!dictionaryT.ContainsKey(t[i]))
+                {
+                    dictionaryT.Add(t[i], 1);
+                }
+                else
+                {
+                    dictionaryT[t[i]]++;
+                }
+            }
+
+            string ansString = string.Empty;
+            int tCount = t.Length;
+            int endIndex = 0;
+            int windowStart = 0;
+            for (int i = 0; i < s.Length; i++)
+            {
+                if (!dictionaryT.ContainsKey(s[i]))
+                {
+                    windowStart++;
+                }
+                else
+                {
+                    tCount--;
+                    if (tCount == 0)
+                    {
+                        endIndex = i;
+                        break;
+                    }
+                }
+            }
+
+            for (int i = windowStart; i < endIndex; i++)
+            {
+                ansString += s[windowStart];
+            }
+
+            return ansString;
+        }
+
+
+        #endregion
+        #region June 28
+        //268. Missing Number
+        //Given an array containing n distinct numbers taken from 0, 1, 2, ..., n, find the one that is missing from the array.
+        //Input: [3,0,1]
+        //Output: 2
+        //Notes: did not get right, think cycle sort
+        public static int MissingNumber(int[] nums) 
+        {
+            int i = 0;
+            while (i < nums.Length)
+            {
+                if (nums[i] < nums.Length && nums[i] != nums[nums[i]])
+                {
+                    var j = nums[i];
+                    var temp = nums[i];
+                    nums[i] = nums[j];
+                    nums[j] = temp;
+                    //or use the swap method below
+                }
+                else
+                {
+                    i++;
+                }
+            }
+
+            for (int j = 0; j < nums.Length; j++)
+            {
+                if (nums[j] != j)
+                {
+                    return j;
+                }
+            }
+
+            return -1;
+        }
+
+        //680. Valid Palindrome II
+        //Given a non-empty string s, you may delete at most one character. Judge whether you can make it a palindrome.
+        //Input: "abca", stack = "acba"
+        //Output: True
+        //Notes: Did not get right, think Greedy Appoach
+        public static bool ValidPalindrome(string s)
+        {
+            Stack<char> stack = new Stack<char>();
+            for (int i = 0; i < s.Length; i++)
+            {
+                stack.Push(s[i]);
+            }
+            int numberOfDeletes = 1;
+            for (int i = 0; i < s.Length; i++)
+            {
+                if (s[i] != stack.Peek() && numberOfDeletes == 0)
+                {
+                    return false;
+                }
+                else if (s[i] != stack.Peek()) 
+                {
+                    stack.Pop();
+                    numberOfDeletes--;
+                }
+                else
+                {
+                    stack.Pop();
+                }
+            }
+            return stack.Count == 0 ? true : false;
+        }
+
+
+        #endregion
+        #region July 9
+        //744. Find Smallest Letter Greater Than Target
+        //Notes: got wrong, simple binary search on string values
+        public static char NextGreatestLetter(char[] letters, char target)
+        {
+            return new char();
+        }
+
+        //448. Find All Numbers Disappeared in an Array
+        //Notes: did not get right on first submission, used cycle sort, hastable would also work
+        public static List<int> FindDisappearedNumbers(int[] nums)
+        {
+            List<int> list = new List<int>();
+            int i = 0;
+            while (i < nums.Length)
+            { 
+                int j = nums[i] - 1;
+                if (nums[i] != nums[j])
+                {
+                    int temp = nums[i];
+                    nums[i] = nums[j];
+                    nums[j] = temp;
+                }
+                else
+                {
+                    i++;
+                }
+            }
+
+            for (int j = 0; j < nums.Length; j++)
+            {
+                if (nums[j] != j + 1)
+                {
+                    list.Add(j + 1);
+                }
+            }
+
+            return list;
+        }
+        #endregion
+
+        #region Utility Functions
+        public static void Swap(int[] nums, int a, int b)
+        {
+            var temp = nums[a];
+            nums[a] = nums[b];
+            nums[b] = temp;
+        }
         #endregion
     }
 
+    public class CustomFunction
+    {
+        public int f(int x, int y)
+        {
+            return -1;
+        }
+    }
 
+    public class ArrayReader
+    {
+        public int Get(int index) { return -1; }
+    }
+    public class RecentCounter
+    {
+        Queue<int> queue;
+        public RecentCounter()
+        {
+            queue = new Queue<int>();
+        }
+
+        public int Ping(int t)
+        {
+            queue.Enqueue(t);
+            while (queue.Peek() < t - 3000)
+            {
+                queue.Dequeue();
+            }
+            return queue.Count;
+        }
+    }
+    public class MovingAverage
+    {
+        double sum;
+        double avg;
+        int size;
+        int count;
+        /** Initialize your data structure here. */
+        public MovingAverage(int size)
+        {
+            sum = 0;
+            avg = 0;
+            this.size = size;
+            count = 0;
+        }
+
+        public double Next(int val)
+        {
+            if (count == 0)
+            {
+                avg = val;
+                sum += val;
+            }
+            else
+            {
+                sum += val;
+                if ((count + 1) > size)
+                {
+                    avg = (sum - 1) / (size);
+                }
+                else
+                {
+                    avg = (sum) / (count + 1);
+                }
+            }
+            count++;
+            return avg;
+        }
+    }
+    public class MyStack
+    {
+        Queue<int> queue1;
+        Queue<int> queue2;
+        /** Initialize your data structure here. */
+        public MyStack()
+        {
+            queue1 = new Queue<int>();
+            queue2 = new Queue<int>();
+        }
+
+        /** Push element x onto stack. */
+        public void Push(int x)
+        {
+            if (queue1.Count == 0)
+            {
+                queue1.Enqueue(x);
+            }
+            else
+            {
+                while (queue1.Count > 0)
+                {
+                    queue2.Enqueue(queue1.Dequeue());
+                }
+                queue1.Enqueue(x);
+                while (queue2.Count > 0)
+                {
+                    queue1.Enqueue(queue2.Dequeue());
+                }
+            }
+        }
+
+        /** Removes the element on top of the stack and returns that element. */
+        public int Pop()
+        {
+            return queue1.Dequeue();
+        }
+
+        /** Get the top element. */
+        public int Top()
+        {
+            var top = queue1.Peek();
+            return top;
+        }
+
+        /** Returns whether the stack is empty. */
+        public bool Empty()
+        {
+            return queue1.Count == 0 ? true : false;
+        }
+    }
+
+    public class MyQueue
+    {
+        Stack<int> tempStack;
+        Stack<int> queueStack;
+        /** Initialize your data structure here. */
+        public MyQueue()
+        {
+            tempStack = new Stack<int>();
+            queueStack = new Stack<int>();
+        }
+
+        /** Push element x to the back of queue. */
+        public void Push(int x)
+        {
+            queueStack.Push(x);
+        }
+
+        /** Removes the element from in front of queue and returns that element. */
+        public int Pop()
+        {
+            if (tempStack.Count == 0)
+            {
+                while (queueStack.Count > 0)
+                {
+                    tempStack.Push(queueStack.Pop());
+                }
+            }
+            return tempStack.Pop();
+        }
+
+        /** Get the front element. */
+        public int Peek()
+        {
+            return queueStack.Peek();
+        }
+
+        /** Returns whether the queue is empty. */
+        public bool Empty()
+        {
+            return queueStack.Count > 0 ? false : true;
+        }
+    }
+    public class MinStack
+    {
+
+        /** initialize your data structure here. */
+        Stack<int> stk;
+        Stack<int> minStack;
+        public MinStack()
+        {
+            stk = new Stack<int>();
+            minStack = new Stack<int>();
+        }
+
+        public void Push(int x)
+        {
+            stk.Push(x);
+            if (minStack.Count == 0 || x <= minStack.Peek())
+            {
+                minStack.Push(x);
+            }
+        }
+
+        public void Pop()
+        {
+            if (stk.Peek() == minStack.Peek())
+            {
+                minStack.Pop();
+            }
+            stk.Pop();
+        }
+
+        public int Top()
+        {
+            return stk.Peek();
+        }
+
+        public int GetMin()
+        {
+            return minStack.Peek();
+        }
+    }
 
     public class Node
     {

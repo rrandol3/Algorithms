@@ -1,0 +1,13 @@
+C:\Users\rrand\source\repos\Algorithms\20 - Coderust Problems\bin\Debug\netcoreapp3.1\20 - Coderust Problems.exe
+C:\Users\rrand\source\repos\Algorithms\20 - Coderust Problems\bin\Debug\netcoreapp3.1\20 - Coderust Problems.deps.json
+C:\Users\rrand\source\repos\Algorithms\20 - Coderust Problems\bin\Debug\netcoreapp3.1\20 - Coderust Problems.runtimeconfig.json
+C:\Users\rrand\source\repos\Algorithms\20 - Coderust Problems\bin\Debug\netcoreapp3.1\20 - Coderust Problems.runtimeconfig.dev.json
+C:\Users\rrand\source\repos\Algorithms\20 - Coderust Problems\bin\Debug\netcoreapp3.1\20 - Coderust Problems.dll
+C:\Users\rrand\source\repos\Algorithms\20 - Coderust Problems\bin\Debug\netcoreapp3.1\20 - Coderust Problems.pdb
+C:\Users\rrand\source\repos\Algorithms\20 - Coderust Problems\obj\Debug\netcoreapp3.1\20 - Coderust Problems.csprojAssemblyReference.cache
+C:\Users\rrand\source\repos\Algorithms\20 - Coderust Problems\obj\Debug\netcoreapp3.1\20 - Coderust Problems.AssemblyInfoInputs.cache
+C:\Users\rrand\source\repos\Algorithms\20 - Coderust Problems\obj\Debug\netcoreapp3.1\20 - Coderust Problems.AssemblyInfo.cs
+C:\Users\rrand\source\repos\Algorithms\20 - Coderust Problems\obj\Debug\netcoreapp3.1\20 - Coderust Problems.csproj.CoreCompileInputs.cache
+C:\Users\rrand\source\repos\Algorithms\20 - Coderust Problems\obj\Debug\netcoreapp3.1\20 - Coderust Problems.dll
+C:\Users\rrand\source\repos\Algorithms\20 - Coderust Problems\obj\Debug\netcoreapp3.1\20 - Coderust Problems.pdb
+C:\Users\rrand\source\repos\Algorithms\20 - Coderust Problems\obj\Debug\netcoreapp3.1\20 - Coderust Problems.genruntimeconfig.cache

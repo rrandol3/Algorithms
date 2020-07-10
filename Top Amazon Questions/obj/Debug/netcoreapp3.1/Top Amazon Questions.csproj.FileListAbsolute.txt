@@ -1,0 +1,13 @@
+C:\Users\rrand\source\repos\Algorithms\Top Amazon Questions\bin\Debug\netcoreapp3.1\Top Amazon Questions.exe
+C:\Users\rrand\source\repos\Algorithms\Top Amazon Questions\bin\Debug\netcoreapp3.1\Top Amazon Questions.deps.json
+C:\Users\rrand\source\repos\Algorithms\Top Amazon Questions\bin\Debug\netcoreapp3.1\Top Amazon Questions.runtimeconfig.json
+C:\Users\rrand\source\repos\Algorithms\Top Amazon Questions\bin\Debug\netcoreapp3.1\Top Amazon Questions.runtimeconfig.dev.json
+C:\Users\rrand\source\repos\Algorithms\Top Amazon Questions\bin\Debug\netcoreapp3.1\Top Amazon Questions.dll
+C:\Users\rrand\source\repos\Algorithms\Top Amazon Questions\bin\Debug\netcoreapp3.1\Top Amazon Questions.pdb
+C:\Users\rrand\source\repos\Algorithms\Top Amazon Questions\obj\Debug\netcoreapp3.1\Top Amazon Questions.csprojAssemblyReference.cache
+C:\Users\rrand\source\repos\Algorithms\Top Amazon Questions\obj\Debug\netcoreapp3.1\Top Amazon Questions.AssemblyInfoInputs.cache
+C:\Users\rrand\source\repos\Algorithms\Top Amazon Questions\obj\Debug\netcoreapp3.1\Top Amazon Questions.AssemblyInfo.cs
+C:\Users\rrand\source\repos\Algorithms\Top Amazon Questions\obj\Debug\netcoreapp3.1\Top Amazon Questions.csproj.CoreCompileInputs.cache
+C:\Users\rrand\source\repos\Algorithms\Top Amazon Questions\obj\Debug\netcoreapp3.1\Top Amazon Questions.dll
+C:\Users\rrand\source\repos\Algorithms\Top Amazon Questions\obj\Debug\netcoreapp3.1\Top Amazon Questions.pdb
+C:\Users\rrand\source\repos\Algorithms\Top Amazon Questions\obj\Debug\netcoreapp3.1\Top Amazon Questions.genruntimeconfig.cache

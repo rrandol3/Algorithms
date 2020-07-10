@@ -1,0 +1,12 @@
+C:\Users\rrand\source\repos\Algorithms\17 - Patterns\bin\Debug\netcoreapp2.2\17 - Patterns.deps.json
+C:\Users\rrand\source\repos\Algorithms\17 - Patterns\bin\Debug\netcoreapp2.2\17 - Patterns.runtimeconfig.json
+C:\Users\rrand\source\repos\Algorithms\17 - Patterns\bin\Debug\netcoreapp2.2\17 - Patterns.runtimeconfig.dev.json
+C:\Users\rrand\source\repos\Algorithms\17 - Patterns\bin\Debug\netcoreapp2.2\17 - Patterns.dll
+C:\Users\rrand\source\repos\Algorithms\17 - Patterns\bin\Debug\netcoreapp2.2\17 - Patterns.pdb
+C:\Users\rrand\source\repos\Algorithms\17 - Patterns\obj\Debug\netcoreapp2.2\17 - Patterns.csprojAssemblyReference.cache
+C:\Users\rrand\source\repos\Algorithms\17 - Patterns\obj\Debug\netcoreapp2.2\17 - Patterns.csproj.CoreCompileInputs.cache
+C:\Users\rrand\source\repos\Algorithms\17 - Patterns\obj\Debug\netcoreapp2.2\17 - Patterns.AssemblyInfoInputs.cache
+C:\Users\rrand\source\repos\Algorithms\17 - Patterns\obj\Debug\netcoreapp2.2\17 - Patterns.AssemblyInfo.cs
+C:\Users\rrand\source\repos\Algorithms\17 - Patterns\obj\Debug\netcoreapp2.2\17 - Patterns.dll
+C:\Users\rrand\source\repos\Algorithms\17 - Patterns\obj\Debug\netcoreapp2.2\17 - Patterns.pdb
+C:\Users\rrand\source\repos\Algorithms\17 - Patterns\obj\Debug\netcoreapp2.2\17 - Patterns.genruntimeconfig.cache

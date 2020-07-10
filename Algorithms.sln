@@ -39,13 +39,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "16 - LeetCode Problems", "1
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "17 - Patterns", "17 - Patterns\17 - Patterns.csproj", "{0B725CF3-3C65-4BEF-BA44-2DECC71E28D0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "18 - Dynamic Programming", "18 - Dynamic Programming\18 - Dynamic Programming.csproj", "{3A48587B-A5AA-4B8E-88C5-4279CE069419}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "18 - Dynamic Programming", "18 - Dynamic Programming\18 - Dynamic Programming.csproj", "{3A48587B-A5AA-4B8E-88C5-4279CE069419}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Divide and Conquer", "Divide and Conquer\Divide and Conquer.csproj", "{ABA5C581-F79B-4CD2-B6B1-D26010F7BCD7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Divide and Conquer", "Divide and Conquer\Divide and Conquer.csproj", "{ABA5C581-F79B-4CD2-B6B1-D26010F7BCD7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Greedy", "Greedy\Greedy.csproj", "{6C03C27C-22B8-4E9C-B12A-A9B5DB82F5E5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Greedy", "Greedy\Greedy.csproj", "{6C03C27C-22B8-4E9C-B12A-A9B5DB82F5E5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "19 - Backtracking", "19 - Backtracking\19 - Backtracking.csproj", "{61700C50-28DA-40BC-936D-34AF4DE50835}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "19 - Backtracking", "19 - Backtracking\19 - Backtracking.csproj", "{61700C50-28DA-40BC-936D-34AF4DE50835}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "20 - Coderust Problems", "20 - Coderust Problems\20 - Coderust Problems.csproj", "{B1099B1B-46AD-4086-89ED-43C6F4D15EDB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Top Amazon Questions", "Top Amazon Questions\Top Amazon Questions.csproj", "{A084B073-A6AC-4823-B45E-6962F7F3A2A2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -141,6 +145,14 @@ Global
 		{61700C50-28DA-40BC-936D-34AF4DE50835}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{61700C50-28DA-40BC-936D-34AF4DE50835}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{61700C50-28DA-40BC-936D-34AF4DE50835}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1099B1B-46AD-4086-89ED-43C6F4D15EDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1099B1B-46AD-4086-89ED-43C6F4D15EDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1099B1B-46AD-4086-89ED-43C6F4D15EDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1099B1B-46AD-4086-89ED-43C6F4D15EDB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A084B073-A6AC-4823-B45E-6962F7F3A2A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A084B073-A6AC-4823-B45E-6962F7F3A2A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A084B073-A6AC-4823-B45E-6962F7F3A2A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A084B073-A6AC-4823-B45E-6962F7F3A2A2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
