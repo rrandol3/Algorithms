@@ -1,21 +1,18 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\rrand\\source\\repos\\Algorithms\\08 - Graphs\\08 - Graphs.csproj": {}
+    "C:\\Users\\rrand\\OneDrive\\Desktop\\Study Material\\Study Code\\08 - Graphs\\08 - Graphs.csproj": {}
   },
   "projects": {
-    "C:\\Users\\rrand\\source\\repos\\Algorithms\\08 - Graphs\\08 - Graphs.csproj": {
+    "C:\\Users\\rrand\\OneDrive\\Desktop\\Study Material\\Study Code\\08 - Graphs\\08 - Graphs.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\rrand\\source\\repos\\Algorithms\\08 - Graphs\\08 - Graphs.csproj",
+        "projectUniqueName": "C:\\Users\\rrand\\OneDrive\\Desktop\\Study Material\\Study Code\\08 - Graphs\\08 - Graphs.csproj",
         "projectName": "08 - Graphs",
-        "projectPath": "C:\\Users\\rrand\\source\\repos\\Algorithms\\08 - Graphs\\08 - Graphs.csproj",
+        "projectPath": "C:\\Users\\rrand\\OneDrive\\Desktop\\Study Material\\Study Code\\08 - Graphs\\08 - Graphs.csproj",
         "packagesPath": "C:\\Users\\rrand\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\rrand\\source\\repos\\Algorithms\\08 - Graphs\\obj\\",
+        "outputPath": "C:\\Users\\rrand\\OneDrive\\Desktop\\Study Material\\Study Code\\08 - Graphs\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
           "C:\\Users\\rrand\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"

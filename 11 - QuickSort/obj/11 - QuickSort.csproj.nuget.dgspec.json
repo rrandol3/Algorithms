@@ -1,21 +1,18 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\rrand\\source\\repos\\Algorithms\\11 - QuickSort\\11 - QuickSort.csproj": {}
+    "C:\\Users\\rrand\\OneDrive\\Desktop\\Study Material\\Study Code\\11 - QuickSort\\11 - QuickSort.csproj": {}
   },
   "projects": {
-    "C:\\Users\\rrand\\source\\repos\\Algorithms\\11 - QuickSort\\11 - QuickSort.csproj": {
+    "C:\\Users\\rrand\\OneDrive\\Desktop\\Study Material\\Study Code\\11 - QuickSort\\11 - QuickSort.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\rrand\\source\\repos\\Algorithms\\11 - QuickSort\\11 - QuickSort.csproj",
+        "projectUniqueName": "C:\\Users\\rrand\\OneDrive\\Desktop\\Study Material\\Study Code\\11 - QuickSort\\11 - QuickSort.csproj",
         "projectName": "11 - QuickSort",
-        "projectPath": "C:\\Users\\rrand\\source\\repos\\Algorithms\\11 - QuickSort\\11 - QuickSort.csproj",
+        "projectPath": "C:\\Users\\rrand\\OneDrive\\Desktop\\Study Material\\Study Code\\11 - QuickSort\\11 - QuickSort.csproj",
         "packagesPath": "C:\\Users\\rrand\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\rrand\\source\\repos\\Algorithms\\11 - QuickSort\\obj\\",
+        "outputPath": "C:\\Users\\rrand\\OneDrive\\Desktop\\Study Material\\Study Code\\11 - QuickSort\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
           "C:\\Users\\rrand\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"

@@ -830,7 +830,7 @@ namespace _17___Patterns
                 }
             }
 
-            //foreach source subtract 1 from child, if child = 0 add it to souces
+            //foreach source subtract 1 from child, if child = 0 add it to sources
             while (sources.Count != 0)
             {
                 int vertex = sources.Dequeue();

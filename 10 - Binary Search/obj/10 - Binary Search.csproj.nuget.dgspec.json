@@ -1,21 +1,18 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\rrand\\source\\repos\\Algorithms\\10 - Binary Search\\10 - Binary Search.csproj": {}
+    "C:\\Users\\rrand\\OneDrive\\Desktop\\Study Material\\Study Code\\10 - Binary Search\\10 - Binary Search.csproj": {}
   },
   "projects": {
-    "C:\\Users\\rrand\\source\\repos\\Algorithms\\10 - Binary Search\\10 - Binary Search.csproj": {
+    "C:\\Users\\rrand\\OneDrive\\Desktop\\Study Material\\Study Code\\10 - Binary Search\\10 - Binary Search.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\rrand\\source\\repos\\Algorithms\\10 - Binary Search\\10 - Binary Search.csproj",
+        "projectUniqueName": "C:\\Users\\rrand\\OneDrive\\Desktop\\Study Material\\Study Code\\10 - Binary Search\\10 - Binary Search.csproj",
         "projectName": "10 - Binary Search",
-        "projectPath": "C:\\Users\\rrand\\source\\repos\\Algorithms\\10 - Binary Search\\10 - Binary Search.csproj",
+        "projectPath": "C:\\Users\\rrand\\OneDrive\\Desktop\\Study Material\\Study Code\\10 - Binary Search\\10 - Binary Search.csproj",
         "packagesPath": "C:\\Users\\rrand\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\rrand\\source\\repos\\Algorithms\\10 - Binary Search\\obj\\",
+        "outputPath": "C:\\Users\\rrand\\OneDrive\\Desktop\\Study Material\\Study Code\\10 - Binary Search\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
           "C:\\Users\\rrand\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"

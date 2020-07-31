@@ -7,19 +7,7 @@ namespace _15___Practice
     {
         static void Main(string[] args)
         {
-            int[] arr = { 7, 4, 3, 5, 9, 8, 10 };
-            BinarySearchTree tree = new BinarySearchTree();
-            for (int i = 0; i < arr.Length; i++)
-            {
-                tree.Add(arr[i]);
-            }
-            tree.InorderTraversal();
-            Console.WriteLine();
-            tree.PreorderTraversal();
-            Console.WriteLine();
-            tree.PostorderTraversal();
-            Console.WriteLine();
-            tree.BFS();
+  
         }
 
         //Quick Sort
@@ -147,6 +135,9 @@ namespace _15___Practice
                 return BinarySearch(arr, mid + 1, high, target);
             }
         }
+        
+        //Graph Dfs
+
     }
 
     //Linked List Node

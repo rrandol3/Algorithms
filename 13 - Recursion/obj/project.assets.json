@@ -687,21 +687,17 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\rrand\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\rrand\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\rrand\\source\\repos\\Algorithms\\13 - Recursion\\13 - Recursion.csproj",
+      "projectUniqueName": "C:\\Users\\rrand\\OneDrive\\Desktop\\Study Material\\Study Code\\13 - Recursion\\13 - Recursion.csproj",
       "projectName": "13 - Recursion",
-      "projectPath": "C:\\Users\\rrand\\source\\repos\\Algorithms\\13 - Recursion\\13 - Recursion.csproj",
+      "projectPath": "C:\\Users\\rrand\\OneDrive\\Desktop\\Study Material\\Study Code\\13 - Recursion\\13 - Recursion.csproj",
       "packagesPath": "C:\\Users\\rrand\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\rrand\\source\\repos\\Algorithms\\13 - Recursion\\obj\\",
+      "outputPath": "C:\\Users\\rrand\\OneDrive\\Desktop\\Study Material\\Study Code\\13 - Recursion\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
         "C:\\Users\\rrand\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"

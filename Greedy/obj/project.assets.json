@@ -8,21 +8,17 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\rrand\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\rrand\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\rrand\\source\\repos\\Algorithms\\Greedy\\Greedy.csproj",
+      "projectUniqueName": "C:\\Users\\rrand\\OneDrive\\Desktop\\Study Material\\Study Code\\Greedy\\Greedy.csproj",
       "projectName": "Greedy",
-      "projectPath": "C:\\Users\\rrand\\source\\repos\\Algorithms\\Greedy\\Greedy.csproj",
+      "projectPath": "C:\\Users\\rrand\\OneDrive\\Desktop\\Study Material\\Study Code\\Greedy\\Greedy.csproj",
       "packagesPath": "C:\\Users\\rrand\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\rrand\\source\\repos\\Algorithms\\Greedy\\obj\\",
+      "outputPath": "C:\\Users\\rrand\\OneDrive\\Desktop\\Study Material\\Study Code\\Greedy\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
         "C:\\Users\\rrand\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"

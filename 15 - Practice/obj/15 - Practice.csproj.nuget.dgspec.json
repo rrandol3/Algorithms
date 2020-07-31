@@ -1,21 +1,18 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\rrand\\source\\repos\\Algorithms\\15 - Practice\\15 - Practice.csproj": {}
+    "C:\\Users\\rrand\\OneDrive\\Desktop\\Study Material\\Study Code\\15 - Practice\\15 - Practice.csproj": {}
   },
   "projects": {
-    "C:\\Users\\rrand\\source\\repos\\Algorithms\\15 - Practice\\15 - Practice.csproj": {
+    "C:\\Users\\rrand\\OneDrive\\Desktop\\Study Material\\Study Code\\15 - Practice\\15 - Practice.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\rrand\\source\\repos\\Algorithms\\15 - Practice\\15 - Practice.csproj",
+        "projectUniqueName": "C:\\Users\\rrand\\OneDrive\\Desktop\\Study Material\\Study Code\\15 - Practice\\15 - Practice.csproj",
         "projectName": "15 - Practice",
-        "projectPath": "C:\\Users\\rrand\\source\\repos\\Algorithms\\15 - Practice\\15 - Practice.csproj",
+        "projectPath": "C:\\Users\\rrand\\OneDrive\\Desktop\\Study Material\\Study Code\\15 - Practice\\15 - Practice.csproj",
         "packagesPath": "C:\\Users\\rrand\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\rrand\\source\\repos\\Algorithms\\15 - Practice\\obj\\",
+        "outputPath": "C:\\Users\\rrand\\OneDrive\\Desktop\\Study Material\\Study Code\\15 - Practice\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
           "C:\\Users\\rrand\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"

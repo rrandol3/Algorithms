@@ -49,7 +49,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "19 - Backtracking", "19 - B
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "20 - Coderust Problems", "20 - Coderust Problems\20 - Coderust Problems.csproj", "{B1099B1B-46AD-4086-89ED-43C6F4D15EDB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Top Amazon Questions", "Top Amazon Questions\Top Amazon Questions.csproj", "{A084B073-A6AC-4823-B45E-6962F7F3A2A2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Top Amazon Questions", "Top Amazon Questions\Top Amazon Questions.csproj", "{A084B073-A6AC-4823-B45E-6962F7F3A2A2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tech Interview Handbook", "Tech Interview Handbook\Tech Interview Handbook.csproj", "{EA3BC38F-AA32-4FF4-A05C-78BF8E982CFE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -153,6 +155,10 @@ Global
 		{A084B073-A6AC-4823-B45E-6962F7F3A2A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A084B073-A6AC-4823-B45E-6962F7F3A2A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A084B073-A6AC-4823-B45E-6962F7F3A2A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA3BC38F-AA32-4FF4-A05C-78BF8E982CFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA3BC38F-AA32-4FF4-A05C-78BF8E982CFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA3BC38F-AA32-4FF4-A05C-78BF8E982CFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA3BC38F-AA32-4FF4-A05C-78BF8E982CFE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
